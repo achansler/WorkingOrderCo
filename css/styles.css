@@ -1,0 +1,101 @@
+/*============================================================================
+  #General Variables
+==============================================================================*/
+@font-face {
+  font-family: 'NantesTrial';
+  src: url("../fonts/NantesTrialWeb-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/NantesTrialWeb-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NantesTrialWeb-Light.woff2") format("woff2"), url("../fonts/NantesTrialWeb-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Nimbus';
+  src: url("../fonts/NimbusSanL-Reg.otf");
+  /* IE9 Compat Modes */ }
+
+/*============================================================================
+  #In Action
+==============================================================================*/
+body {
+  font-family: "Nimbus", sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+h1 {
+  display: block;
+  font-family: "NantesTrial", serif;
+  font-weight: 300; }
+
+h1 {
+  font-size: 3.875em; }
+
+h2 {
+  font-size: 2.375em; }
+
+h3 {
+  font-size: 1.125em; }
+
+p.large {
+  font-size: 1.875em; }
+
+p.medium {
+  font-size: 1.375em; }
+
+p, a {
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222; }
+
+li.large {
+  font-size: 1.875em; }
+
+li.medium {
+  font-size: 1.375em; }
+
+li {
+  font-size: 16px; }
+
+/*================ Blockquotes ================*/
+blockquote {
+  font-family: "NantesTrial", serif;
+  font-size: 5.625em;
+  line-height: 1.13;
+  margin: 0px; }
+  blockquote p {
+    margin-bottom: 0; }
+    blockquote p + cite {
+      margin-top: 80px; }
+  blockquote cite {
+    display: block;
+    font-size: 16px;
+    margin-top: 80px;
+    font-family: "Nimbus", sans-serif;
+    font-style: normal;
+    text-transform: uppercase; }
+
+.secondaryPink {
+  background-color: #C78D8D; }
+
+.secondaryGreen {
+  background-color: #81876E; }
+
+.secondaryOrange {
+  background-color: #C8684C; }
+
+.secondaryLilac {
+  background-color: #BECCE1; }
+
+.secondaryYellow {
+  background-color: #DAC047; }
+
+.secondaryGray {
+  background-color: #D1CFCD; }
+
+img {
+  width: 100%;
+  height: auto; }
