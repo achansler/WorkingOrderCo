@@ -22,6 +22,7 @@ $baseFontSize: 16px; // Henceforth known as 1em
 
 // Space
 $baseSpace: 20px;
+$gridSpace: $baseSpace * 4;
 
 
 
@@ -59,11 +60,9 @@ h1 {
   display: block;
   font-family: $headerFontStack;
   font-weight: 300;
-  margin-bottom: $baseSpace * 4;
-}
-
-h1 {
+  margin-bottom: $gridSpace;
   font-size: 3.875em;
+  line-height: 1.16em;
 }
 
 .header_text{
@@ -73,6 +72,9 @@ h1 {
 
 h2 {
   font-size: 2.375em;
+  font-weight: normal;
+  line-height: 1.13em;
+  margin-bottom: $baseSpace * 4;
 }
 
 h3 {
@@ -184,23 +186,47 @@ picture img {
 
 .philosophy_background {
   background-image: url("../images/philosohpy_flower.png");
-  background-size: 100%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.philosophy_background_page {
+  background: url("../images/philosohpy_flower.png");
+  background-size: 70%;
   background-repeat: no-repeat;
 }
 
 .elixir_background {
   background-image: url("../images/elixirs_flower.png");
-  background-size: cover;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .visit_background {
   background-image: url("../images/visit_flower.png");
-  background-size: cover;
+  background-size: 50%;
+  background-repeat: no-repeat;
 }
 
 .secret_message_home {
   background-image: url("../images/home_secret.png");
   background-size: cover;
+}
+
+.secret_message_philosophy {
+  background: url("../images/philosophy_secret.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.water {
+  background: url("../images/water.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
 }
 
 // list
@@ -227,7 +253,7 @@ ul {
 
 //layout
 footer {
-  padding-top: $baseSpace * 6;
+  padding-top: $gridSpace * 2;
 }
 
 footer .border {
@@ -239,7 +265,7 @@ footer .secondary_footer {
 }
 
 .secret_message {
-  padding-top: $baseSpace * 23;
+  padding-top: $gridSpace * 6;
   padding-bottom: $baseSpace;
 }
 
@@ -249,4 +275,37 @@ footer .secondary_footer {
 
 .home_links {
   margin-top: 50px;
+}
+
+.sidebar {
+  width: 10%;
+  height: 25vh; // experiment with this value, try changing to 110vh
+  min-height: 50px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  background-color: $primaryWhite;
+}
+
+.main {
+  width: 110%;
+  min-height: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: $secondaryPink;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.bottom {
+  justify-self: bottom;
+}
+
+.white {
+  background-color: $primaryWhite;
 }

@@ -27,17 +27,19 @@ h1 {
   display: block;
   font-family: "NantesTrial", serif;
   font-weight: 300;
-  margin-bottom: 80px; }
-
-h1 {
-  font-size: 3.875em; }
+  margin-bottom: 80px;
+  font-size: 3.875em;
+  line-height: 1.16em; }
 
 .header_text {
   font-size: 4em;
   text-align: center; }
 
 h2 {
-  font-size: 2.375em; }
+  font-size: 2.375em;
+  font-weight: normal;
+  line-height: 1.13em;
+  margin-bottom: 80px; }
 
 h3 {
   font-size: 1.125em; }
@@ -122,20 +124,41 @@ picture img {
 
 .philosophy_background {
   background-image: url("../images/philosohpy_flower.png");
-  background-size: 100%;
+  background-size: 50%;
+  background-repeat: no-repeat; }
+
+.philosophy_background_page {
+  background: url("../images/philosohpy_flower.png");
+  background-size: 70%;
   background-repeat: no-repeat; }
 
 .elixir_background {
   background-image: url("../images/elixirs_flower.png");
-  background-size: cover; }
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right; }
 
 .visit_background {
   background-image: url("../images/visit_flower.png");
-  background-size: cover; }
+  background-size: 50%;
+  background-repeat: no-repeat; }
 
 .secret_message_home {
   background-image: url("../images/home_secret.png");
   background-size: cover; }
+
+.secret_message_philosophy {
+  background: url("../images/philosophy_secret.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.water {
+  background: url("../images/water.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px; }
 
 li {
   list-style: none;
@@ -154,7 +177,7 @@ ul {
   padding-left: 0px; }
 
 footer {
-  padding-top: 120px; }
+  padding-top: 160px; }
 
 footer .border {
   border-top: 1px solid #D1CFCD; }
@@ -163,7 +186,7 @@ footer .secondary_footer {
   padding-left: 40px; }
 
 .secret_message {
-  padding-top: 460px;
+  padding-top: 480px;
   padding-bottom: 20px; }
 
 .right {
@@ -171,3 +194,30 @@ footer .secondary_footer {
 
 .home_links {
   margin-top: 50px; }
+
+.sidebar {
+  width: 10%;
+  height: 25vh;
+  min-height: 50px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  background-color: #FFFFFF; }
+
+.main {
+  width: 110%;
+  min-height: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #C78D8D; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.bottom {
+  justify-self: bottom; }
+
+.white {
+  background-color: #FFFFFF; }
