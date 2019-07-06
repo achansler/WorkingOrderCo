@@ -17,7 +17,7 @@
 ==============================================================================*/
 body {
   font-family: "Nimbus", sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 16px;
   color: #222;
   -webkit-font-smoothing: antialiased;
@@ -26,10 +26,15 @@ body {
 h1 {
   display: block;
   font-family: "NantesTrial", serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 80px; }
 
 h1 {
   font-size: 3.875em; }
+
+.header_text {
+  font-size: 4em;
+  text-align: center; }
 
 h2 {
   font-size: 2.375em; }
@@ -49,7 +54,12 @@ p, a {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #222; }
+  color: #222;
+  transition: all .4s ease-out;
+  letter-spacing: .1em; }
+
+a:hover {
+  letter-spacing: .3em; }
 
 li.large {
   font-size: 1.875em; }
@@ -60,7 +70,6 @@ li.medium {
 li {
   font-size: 16px; }
 
-/*================ Blockquotes ================*/
 blockquote {
   font-family: "NantesTrial", serif;
   font-size: 5.625em;
@@ -77,6 +86,9 @@ blockquote {
     font-family: "Nimbus", sans-serif;
     font-style: normal;
     text-transform: uppercase; }
+
+.primaryWhite {
+  color: #FFFFFF; }
 
 .secondaryPink {
   background-color: #C78D8D; }
@@ -96,6 +108,66 @@ blockquote {
 .secondaryGray {
   background-color: #D1CFCD; }
 
-img {
+picture img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
+
+.header_background {
+  background: url("../images/home_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 798px; }
+
+.philosophy_background {
+  background-image: url("../images/philosohpy_flower.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.elixir_background {
+  background-image: url("../images/elixirs_flower.png");
+  background-size: cover; }
+
+.visit_background {
+  background-image: url("../images/visit_flower.png");
+  background-size: cover; }
+
+.secret_message_home {
+  background-image: url("../images/home_secret.png");
+  background-size: cover; }
+
+li {
+  list-style: none;
+  line-height: 2.5; }
+
+li.secondary {
+  line-height: 1.5; }
+
+li.secondary a {
+  text-transform: none; }
+
+li:first-child {
+  margin-top: 20px; }
+
+ul {
+  padding-left: 0px; }
+
+footer {
+  padding-top: 120px; }
+
+footer .border {
+  border-top: 1px solid #D1CFCD; }
+
+footer .secondary_footer {
+  padding-left: 40px; }
+
+.secret_message {
+  padding-top: 460px;
+  padding-bottom: 20px; }
+
+.right {
+  float: right; }
+
+.home_links {
+  margin-top: 50px; }

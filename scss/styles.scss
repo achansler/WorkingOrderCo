@@ -48,7 +48,7 @@ $baseSpace: 20px;
 body,
  {
   font-family: $bodyFontStack;
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: $baseFontSize;
   color: $primaryBlack;
   -webkit-font-smoothing: antialiased;
@@ -59,10 +59,16 @@ h1 {
   display: block;
   font-family: $headerFontStack;
   font-weight: 300;
+  margin-bottom: $baseSpace * 4;
 }
 
 h1 {
   font-size: 3.875em;
+}
+
+.header_text{
+  font-size: 4em;
+  text-align: center;
 }
 
 h2 {
@@ -89,6 +95,12 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: $primaryBlack;
+  transition: all .4s ease-out;
+  letter-spacing: .1em;
+}
+
+a:hover {
+  letter-spacing: .3em;
 }
 
 // Lists
@@ -105,7 +117,7 @@ li {
   font-size: $baseFontSize;
 }
 
-/*================ Blockquotes ================*/
+// Blockquotes
 blockquote {
   font-family: $headerFontStack;
   font-size: 5.625em;
@@ -133,6 +145,9 @@ blockquote {
 
 
 // Colors
+.primaryWhite {
+  color: $primaryWhite;
+}
 .secondaryPink {
   background-color: $secondaryPink;
 }
@@ -152,4 +167,86 @@ blockquote {
   background-color: $secondaryGray;
 }
 
-img {width:100%; height:auto}
+// Images
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header_background {
+  background: url("../images/home_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 798px;
+}
+
+.philosophy_background {
+  background-image: url("../images/philosohpy_flower.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.elixir_background {
+  background-image: url("../images/elixirs_flower.png");
+  background-size: cover;
+}
+
+.visit_background {
+  background-image: url("../images/visit_flower.png");
+  background-size: cover;
+}
+
+.secret_message_home {
+  background-image: url("../images/home_secret.png");
+  background-size: cover;
+}
+
+// list
+li {
+  list-style: none;
+  line-height: 2.5;
+}
+
+li.secondary {
+  line-height: 1.5;
+}
+
+li.secondary a {
+  text-transform: none;
+}
+
+li:first-child {
+  margin-top: $baseSpace;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+//layout
+footer {
+  padding-top: $baseSpace * 6;
+}
+
+footer .border {
+  border-top: 1px solid $secondaryGray;
+}
+
+footer .secondary_footer {
+  padding-left: $baseSpace * 2;
+}
+
+.secret_message {
+  padding-top: $baseSpace * 23;
+  padding-bottom: $baseSpace;
+}
+
+.right {
+  float: right;
+}
+
+.home_links {
+  margin-top: 50px;
+}

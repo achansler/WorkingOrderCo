@@ -442,7 +442,7 @@ html {
     -ms-flex-order: 10;
     order: 10;
   }
-  
+
   .offset-sm-0 {
     margin-left: 0;
   }
@@ -1323,6 +1323,10 @@ html {
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   align-items: center !important;
+}
+
+.align-bottom {
+  vertical-align: bottom!important;
 }
 
 .align-items-baseline {

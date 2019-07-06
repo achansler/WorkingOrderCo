@@ -5,59 +5,100 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/simple-grid.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
 
   </head>
   <body>
     <div class="container">
+      <header class="row">
+        <div class="col-lg-10 header_background d-flex align-items-center">
+          <div class="col-lg-6 offset-lg-2">
+            <h1 class="header_text">Visit the interior of the earth, and through purification you will find the hidden stone.</h1>
+          </div>
+        </div>
+      </header>
       <div class="row secondaryPink">
-        <div class="col-lg-5">
-          <h1>Philosophy</h1>
-          <p>
-            Inspired by the greatest design system of all time -- nature -- we create products and experiences to get you back into working order.
-          </p>
-          <a href="#">Read our story</a>
+        <div class="col-lg-5 philosophy_background d-flex align-items-center">
+          <div class="col-lg-5 offset-lg-2">
+            <h1>Philosophy</h1>
+            <p class="medium">
+              Inspired by the greatest design system of all time — nature — we create products and experiences to get you back into working order.
+            </p>
+            <div class="home_links" href="#">
+              <a href="#">Read our story</a>
+              <img class="right"
+                src="images/arrow_right.svg"
+                alt="top arrow"
+                height="16px"
+                width="28px" />
+            </div>
+          </div>
         </div>
         <div class="col-lg-5">
-          <img src="images/philosophy.jpg" alt="photo of a restorative elixir"/>
+          <picture><img src="images/philosophy.jpg" alt="photo of a restorative elixir"/></picture>
         </div>
       </div>
       <div class="row secondaryGreen">
         <div class="col-lg-5">
-          <img src="images/elixirs.jpg" alt="photo of a restorative elixir"/>
+          <picture><img src="images/elixirs.jpg" alt="photo of a restorative elixir"/></picture>
         </div>
-        <div class="col-lg-5">
-          <h1>Elixirs</h1>
-          <p>
-            Founded in Brooklyn, we currently offer a selection of made-to-order restorative elixirs, each influenced by the three needs our bodies have throughout the day: Awaken, Rejuvenate, Unwind.
-          </p>
-          <a href="#">Discover our products</a>
+        <div class="col-lg-5 elixir_background d-flex align-items-center">
+          <div class="col-lg-6 offset-lg-2">
+            <h1>Elixirs</h1>
+            <p class="medium">
+              Founded in Brooklyn, we currently offer a selection of made-to-order restorative elixirs, each influenced by the three needs our bodies have throughout the day: Awaken, Rejuvenate, Unwind.
+            </p>
+            <a href="#">
+              <a href="#">Discover our products</a>
+              <img class="right"
+                src="images/arrow_right.svg"
+                alt="top arrow"
+                height="16px"
+                width="28px" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="row secondaryOrange">
-        <div class="col-lg-5">
-          <h1>Visit</h1>
-          <p>
-            To experience WORKING ORDER for yourself, we invite you to visit us at our mimuted summer pop-up space, running from September through November.
-          </p>
+        <div class="col-lg-5 visit_background d-flex align-items-center">
+          <div class="col-lg-6 offset-lg-2">
+            <h1>Visit</h1>
+            <p class="medium">
+              To experience WORKING ORDER for yourself, we invite you to visit us at our mimuted summer pop-up space, running from September through November.
+            </p>
+            <a href="#">
+              <a href="#">Visit the popup</a>
+              <img class="right"
+                src="images/arrow_right.svg"
+                alt="top arrow"
+                height="16px"
+                width="28px" />
+            </a>
+          </div>
         </div>
         <div class="col-lg-5">
-          <img src="images/visit.jpg" alt="Working Order location"/>
+          <picture><img src="images/visit.jpg" alt="Working Order location"/></picture>
         </div>
       </div>
       <div class="row secondaryLilac">
-        <div class="col-lg-5 offset-lg-1">
+        <div class="col-lg-5 offset-lg-1 d-flex align-items-center">
           <blockquote>"Get ready for summer with this new all-natural restorative elixirs."<cite>From the <a href="#">New York Times</a></cite></blockquote>
         </div>
         <div class="col-lg-2 offset-lg-2">
-          <img src="images/quote_image.jpg" alt="drawing of a flower" />
+          <picture><img src="images/quote_image.jpg" alt="drawing of a flower" /></picture>
         </div>
       </div>
       <footer>
         <div class="row">
-          <div class="col-lg-3 offset-lg-6">
-            <ul>
+          <div class="offset-lg-1">
+            <img
+              src="images/arrow_top.svg"
+              alt="top arrow"
+              height="28px"
+              width="16px" />
+          </div>
+          <div class="col-lg-2 offset-lg-4">
+            <ul class="border">
               <li>
                 <a href="#">Visit Us</a>
               </li>
@@ -69,26 +110,41 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3">
-            <ul>
-              <li>
+          <div class="col-lg-2 secondary_footer">
+            <ul class="border">
+              <li class="secondary">
                 <a href="#">Instagram</a>
               </li>
-              <li>
+              <li class="secondary">
                 <a href="#">Facebook</a>
               </li>
             </ul>
-            <ul>
-              <li>
+            <ul class="border">
+              <li class="secondary">
                 <a href="#">FAQ</a>
               </li>
-              <li>
+              <li class="secondary">
                 <a href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-1 offset-lg-1">
+            <picture><img src="images/seal_img_top.png" alt="top half of Working Order seal" /></picture>
+          </div>
+        </div>
       </footer>
+      <div class="row">
+        <div class="col-lg-10 secret_message_home">
+          <div class="col-lg-1 offset-lg-1">
+            <picture><img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" /></picture>
+          </div>
+          <h3 class="primaryWhite secret_message d-flex justify-content-center">
+            CUTE HIDDEN MESSAGE OR QUOTE GOES HERE.
+          </h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>
