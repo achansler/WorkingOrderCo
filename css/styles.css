@@ -160,6 +160,9 @@ picture img {
   background-size: cover;
   height: 550px; }
 
+.nature_knows_best_img {
+  z-index: 50; }
+
 li {
   list-style: none;
   line-height: 2.5; }
@@ -184,10 +187,6 @@ footer .border {
 
 footer .secondary_footer {
   padding-left: 40px; }
-
-.secret_message {
-  padding-top: 480px;
-  padding-bottom: 20px; }
 
 .right {
   float: right; }
@@ -221,3 +220,77 @@ footer .secondary_footer {
 
 .white {
   background-color: #FFFFFF; }
+
+.philosophy_intro {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.overlap_earthly_pleasures, .overlap_downtime {
+  display: grid;
+  grid-template-columns: repeat(5, 20%); }
+
+.overlap_earthly_pleasures__items:first-of-type {
+  grid-column: 1/ span 4;
+  grid-row: 1/ span 2; }
+
+.overlap_earthly_pleasures__items:last-of-type {
+  grid-column: 3/ span 3;
+  grid-row: 2 / span 2; }
+
+.overlap_downtime__items:first-of-type {
+  grid-column: 2/ span 3;
+  grid-row: 1/ span 2;
+  z-index: 51; }
+
+.overlap_downtime__items:last-of-type {
+  grid-column: 1/ span 3;
+  grid-row: 2/ span 2; }
+
+.dowtime_module {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.philosophy_module {
+  margin-bottom: 80px; }
+
+#absolute {
+  position: absolute; }
+
+.quote {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center; }
+
+h2.quote {
+  margin-bottom: 0px; }
+
+.secret_message {
+  padding-top: 480px;
+  padding-bottom: 20px; }
+
+.nature_heading {
+  margin-top: 240px; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%; } }
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 100%; }
+  .nature_knows_best_img {
+    margin-top: 27%; }
+  .philosophy_header {
+    padding-top: 100px; } }
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 100%; }
+  .nature_knows_best_img {
+    margin-top: 20%; }
+  .philosophy_header {
+    padding-top: 160px; } }
