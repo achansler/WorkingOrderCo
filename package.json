@@ -1,7 +1,7 @@
 {
   "name": "workingorderco",
   "version": "1.0.0",
-  "description": "",
+  "description": "to run css",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.12.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achansler/WorkingOrderCo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/achansler/WorkingOrderCo/issues"
+  },
+  "homepage": "https://github.com/achansler/WorkingOrderCo#readme"
 }

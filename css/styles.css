@@ -404,6 +404,11 @@ nav a {
   grid-template-columns: repeat(9, 11.1%);
   grid-template-rows: repeat(auto, 80px); }
 
+.needs_section {
+  display: grid;
+  grid-template-columns: repeat(7, 14.28%);
+  grid-template-rows: repeat(80, 80px); }
+
 footer .section {
   display: grid;
   grid-template-columns: repeat(10, 10%);
@@ -574,3 +579,57 @@ aside {
   position: fixed;
   bottom: 0;
   z-index: -1; }
+
+/*============================================================================
+  #accordion on the elixir page
+==============================================================================*/
+ul.need_sections {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none; }
+
+ul.need_sections li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-top: 0px; }
+
+ul.need_sections li.active {
+  flex: 5;
+  cursor: default; }
+
+ul.need_sections li.active .section-content {
+  flex: 4;
+  opacity: 1;
+  transform: scaleX(1); }
+
+ul.need_sections li .section-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white; }
+
+ul.need_sections li .section-title h2 {
+  margin: 0;
+  white-space: nowrap; }
+
+ul.need_sections li .section-content {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all .5s .1s ease-out; }
+
+.test {
+  grid-column: 2/ span 2;
+  grid-row: 6/ span 1; }
