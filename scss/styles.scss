@@ -825,10 +825,7 @@ ul.need_sections li {
   transition: all .5s ease;
   margin-top: 0px;
   width: 11.08%;
-}
-
-ul.need_sections li.original_space {
-  flex: 1;
+  flex: 1 1 0;
 }
 
 
@@ -866,7 +863,6 @@ ul.need_sections li .section-content {
   opacity: 0;
   transition: all .5s .1s ease-out;
 }
-
 .test {
   grid-column: 2/ span 2;
   grid-row: 6/ span 1;

@@ -618,10 +618,8 @@ ul.need_sections li {
   cursor: pointer;
   transition: all .5s ease;
   margin-top: 0px;
-  width: 11.08%; }
-
-ul.need_sections li.original_space {
-  flex: 1; }
+  width: 11.08%;
+  flex: 1 1 0; }
 
 ul.need_sections li.active {
   flex: 77.83%;
