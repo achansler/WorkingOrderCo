@@ -394,7 +394,7 @@ nav a {
 ==============================================================================*/
 .container {
   display: grid;
-  grid-template-areas: "content content content content content content content content content side" "footer footer footer footer footer footer footer footer footer footer";
+  grid-template-areas: "content content content content content content content content content side" "newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter" "footer footer footer footer footer footer footer footer footer footer";
   grid-template-columns: repeat(10, 10%);
   grid-gap: 0px;
   height: 100vh; }
@@ -414,11 +414,19 @@ footer .section {
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(auto, 80px); }
 
+newsletter .section {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(auto, 80px); }
+
 main {
   grid-area: content; }
 
 footer {
   grid-area: footer; }
+
+newsletter {
+  grid-area: newsletter; }
 
 main.pink {
   background-color: #C78D8D; }
@@ -486,6 +494,14 @@ aside {
   text-transform: uppercase;
   z-index: 3; }
 
+.newsletter_text {
+  grid-column: 2/ span 4;
+  grid-row: 3 / span 1; }
+
+newsletter input {
+  grid-column: 2/ span 3;
+  grid-row: 4 / span 1; }
+
 .philosophy_elixir {
   grid-column: 7/ span 3;
   grid-row: 1/ span 8; }
@@ -528,6 +544,10 @@ aside {
 .downtime_paragraph {
   grid-column: 7/ span 2;
   grid-row: 7/ span 3; }
+
+.newsletter_image {
+  grid-column: 6/ span 6;
+  grid-row: 1/ span 6; }
 
 .back_top_arrow {
   grid-column: 2/ span 1;
@@ -593,15 +613,18 @@ ul.need_sections {
   list-style-type: none; }
 
 ul.need_sections li {
-  flex: 1;
   display: flex;
   align-items: stretch;
   cursor: pointer;
   transition: all .5s ease;
-  margin-top: 0px; }
+  margin-top: 0px;
+  width: 11.08%; }
+
+ul.need_sections li.original_space {
+  flex: 1; }
 
 ul.need_sections li.active {
-  flex: 5;
+  flex: 77.83%;
   cursor: default; }
 
 ul.need_sections li.active .section-content {

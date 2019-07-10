@@ -25,3 +25,8 @@ function toggleAccordion() {
 }
 
 section.on('click', toggleAccordion);
+
+
+$('#accordion_section').click(function() {
+   $(this).removeClass('original_space');
+  });

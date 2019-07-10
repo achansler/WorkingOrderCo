@@ -545,6 +545,7 @@ nav a {
 
   grid-template-areas:
     "content content content content content content content content content side"
+    "newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter"
     "footer footer footer footer footer footer footer footer footer footer";
 
   grid-template-columns: repeat(10, 10%);
@@ -572,6 +573,12 @@ footer .section {
   grid-template-rows: repeat(auto, 80px);
 }
 
+newsletter .section {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(auto, 80px);
+}
+
 main {
   grid-area: content;
 }
@@ -579,6 +586,11 @@ main {
 footer {
   grid-area: footer;
 }
+
+newsletter {
+  grid-area: newsletter;
+}
+
 
 main.pink {
   background-color: $secondaryPink;
@@ -662,6 +674,16 @@ aside {
   z-index: 3;
 }
 
+.newsletter_text {
+  grid-column: 2/ span 4;
+  grid-row: 3 / span 1;
+}
+
+newsletter input {
+  grid-column: 2/ span 3;
+  grid-row: 4 / span 1;
+}
+
 
 // images
 .philosophy_elixir{
@@ -715,6 +737,11 @@ aside {
 .downtime_paragraph {
   grid-column: 7/ span 2;
   grid-row: 7/ span 3;
+}
+
+.newsletter_image {
+  grid-column: 6/ span 6;
+  grid-row: 1/ span 6;
 }
 
 //footer
@@ -792,17 +819,23 @@ ul.need_sections {
 }
 
 ul.need_sections li {
-  flex: 1;
   display: flex;
   align-items: stretch;
   cursor: pointer;
   transition: all .5s ease;
   margin-top: 0px;
+  width: 11.08%;
 }
+
+ul.need_sections li.original_space {
+  flex: 1;
+}
+
+
 ul.need_sections li:hover {
 }
 ul.need_sections li.active {
-  flex: 5;
+  flex: 77.83%;
   cursor: default;
 }
 ul.need_sections li.active h2 {
