@@ -5,17 +5,86 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
 
   </head>
   <body>
 
 
     <div class="container">
-      <main class="pink">
-        Homepage 
-      </main>
+        <header class="row">
+          <div class="col-lg-10 header_background d-flex align-items-center">
+            <div class="col-lg-6 offset-lg-2">
+              <h1 class="header_text">Visit the interior of the earth, and through purification you will find the hidden stone.</h1>
+            </div>
+          </div>
+        </header>
+        <div class="row secondaryPink philosophy_background d-flex align-items-center">
+          <div class="col-lg-3 offset-lg-1">
+            <h1>Philosophy</h1>
+            <p class="medium">
+              Inspired by the greatest design system of all time — nature — we create products and experiences to get you back into working order.
+            </p>
+            <div class="home_links" href="#">
+              <a href="#">Read our story</a>
+              <img class="right"
+                src="images/arrow_right.svg"
+                alt="top arrow"
+                height="16px"
+                width="28px" />
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <picture><img src="images/philosophy.jpg" alt="photo of a restorative elixir"/></picture>
+          </div>
+        </div>
+        <div class="row secondaryGreen elixir_background d-flex align-items-center">
+          <div class="col-lg-5">
+            <picture><img src="images/elixirs.jpg" alt="photo of a restorative elixir"/></picture>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <h1>Elixirs</h1>
+            <p class="medium">
+              Founded in Brooklyn, we currently offer a selection of made-to-order restorative elixirs, each influenced by the three needs our bodies have throughout the day: Awaken, Rejuvenate, Unwind.
+            </p>
+            <div class="home_links" href="#">
+              <a href="#">Discover our products</a>
+              <img class="right"
+                src="images/arrow_right.svg"
+                alt="top arrow"
+                height="16px"
+                width="28px" />
+            </div>
+          </div>
+        </div>
+        <div class="row secondaryOrange visit_background d-flex align-items-center">
+          <div class="col-lg-3 offset-lg-1">
+            <h1>Visit</h1>
+            <p class="medium">
+              To experience WORKING ORDER for yourself, we invite you to visit us at our mimuted summer pop-up space, running from September through November.
+            </p>
+            <div class="home_links" href="#">
+              <a href="#">Visit the popup</a>
+              <img class="right"
+                src="images/arrow_right.svg"
+                alt="top arrow"
+                height="16px"
+                width="28px" />
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <picture><img src="images/visit.jpg" alt="Working Order location"/></picture>
+          </div>
+        </div>
+        <div class="row secondaryLilac">
+          <div class="col-lg-5 offset-lg-1 d-flex align-items-center">
+            <blockquote>"Get ready for summer with this new all-natural restorative elixirs."<cite>From the <a href="#">New York Times</a></cite></blockquote>
+          </div>
+          <div class="col-lg-2 offset-lg-2">
+            <picture><img src="images/quote_image.jpg" alt="drawing of a flower" /></picture>
+          </div>
+        </div>
 
-      <aside>
         <sidebar>
           <div class="button_container" id="toggle">
             <span class="top"></span>
@@ -25,66 +94,67 @@
           <div class="overlay" id="overlay">
             <nav class="overlay-menu">
               <ul>
-                <li><a href="#">Philosophy</a></li>
-                <li><a href="#">Elixirs</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="elixirs.html">Elixirs</a></li>
                 <li><a href="#">Visit Us</a></li>
               </ul>
             </nav>
           </div>
-          <h3 class="page_label">Philosophy</h3>
         </sidebar>
-      </aside>
 
+      </div>
 
-      <footer>
-        <div class="section static">
-          <a class="back_top_arrow" id="btt_button">
-          </a>
-          <div class="footer_main_list">
-            <ul class="border">
-              <li>
-                <a href="#">Visit Us</a>
-              </li>
-              <li>
-                <a href="philosophy.html">Philosophy</a>
-              </li>
-              <li>
-                <a href="#">Restorative Elixirs</a>
-              </li>
-            </ul>
+      <div class="grid_container">
+        <footer>
+          <div class="section static">
+            <a class="back_top_arrow" id="btt_button">
+            </a>
+            <div class="footer_main_list">
+              <ul class="border">
+                <li>
+                  <a href="#">Visit Us</a>
+                </li>
+                <li>
+                  <a href="philosophy.html">Philosophy</a>
+                </li>
+                <li>
+                  <a href="#">Restorative Elixirs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_secondary_list">
+              <ul class="border">
+                <li class="secondary">
+                  <a href="#">Instagram</a>
+                </li>
+                <li class="secondary">
+                  <a href="#">Facebook</a>
+                </li>
+              </ul>
+              <ul class="border">
+                <li class="secondary">
+                  <a href="#">FAQ</a>
+                </li>
+                <li class="secondary">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="seal_top">
+              <picture><img src="images/seal_img_top.png" alt="top half of Working Order seal" /></picture>
+            </div>
           </div>
-          <div class="footer_secondary_list">
-            <ul class="border">
-              <li class="secondary">
-                <a href="#">Instagram</a>
-              </li>
-              <li class="secondary">
-                <a href="#">Facebook</a>
-              </li>
-            </ul>
-            <ul class="border">
-              <li class="secondary">
-                <a href="#">FAQ</a>
-              </li>
-              <li class="secondary">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+          <div class="section secret_message_philosophy secret">
+            <div class="seal_bottom">
+              <picture><img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" /></picture>
+            </div>
+            <h3 class="primaryWhite secret_message">
+              CUTE HIDDEN MESSAGE OR QUOTE GOES HERE.
+            </h3>
           </div>
-          <div class="seal_top">
-            <picture><img src="images/seal_img_top.png" alt="top half of Working Order seal" /></picture>
-          </div>
-        </div>
-        <div class="section secret_message_philosophy secret">
-          <div class="seal_bottom">
-            <picture><img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" /></picture>
-          </div>
-          <h3 class="primaryWhite secret_message">
-            CUTE HIDDEN MESSAGE OR QUOTE GOES HERE.
-          </h3>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>
