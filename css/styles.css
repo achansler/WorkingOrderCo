@@ -423,7 +423,7 @@ footer .section {
 newsletter .section {
   display: grid;
   grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(auto, 80px); }
+  grid-template-rows: repeat(auto-fill, minmax(80px, 81px)); }
 
 main {
   grid-area: content; }
@@ -504,9 +504,45 @@ aside {
   grid-column: 2/ span 4;
   grid-row: 3 / span 1; }
 
-newsletter input {
-  grid-column: 2/ span 3;
+.newsletter_input {
+  grid-column: 2/ span 2;
   grid-row: 4 / span 1; }
+
+.newsletter_arrow {
+  grid-column: 4/ span 1;
+  grid-row: 4 / span 1;
+  border-bottom: 2px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.border_input {
+  width: 100%; }
+
+input[type=email] {
+  border: none;
+  border-bottom: 2px solid #222;
+  background-color: transparent;
+  padding-bottom: 20px;
+  margin-top: 20px; }
+
+input::placeholder {
+  text-transform: uppercase;
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #222;
+  opacity: 1;
+  /* Firefox */
+  text-transform: uppercase; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #222;
+  text-transform: uppercase; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #222;
+  text-transform: uppercase; }
 
 .philosophy_elixir {
   grid-column: 7/ span 3;
