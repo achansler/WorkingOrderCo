@@ -171,11 +171,20 @@ blockquote {
   background-color: $secondaryGray;
 }
 
+.white {
+  background-color: $primaryWhite;
+}
+
 // Images
-picture img {
+img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.svg {
+  height: 16px;
+  width: 28px;
 }
 
 .header_background {
@@ -262,6 +271,30 @@ ul {
 
 //layout
 
+.green_box {
+  background-color: $secondaryGreen;
+  height: 15vh;
+  width: 30vw;
+  top: 0%;
+}
+
+.blue_box {
+  grid-column: 7/ span 3;
+  background-color: $secondaryLilac;
+  height: 10vh;
+  width: 30vw;
+  top: 0%;
+}
+
+.pink_box {
+  grid-column: 4/ span 3;
+  grid-row: 10 / span 5;
+  background-color: $secondaryPink;
+  height: 15vh;
+  width: 30vw;
+  bottom: 0%;
+}
+
 footer .border {
   border-top: 1px solid $secondaryGray;
 }
@@ -310,6 +343,10 @@ footer .secondary_footer {
 
 .white {
   background-color: $primaryWhite;
+}
+
+.elixir_header {
+  height: 100vh;
 }
 /*============================================================================
   #Nav
@@ -565,7 +602,7 @@ nav a {
 .section {
   display: grid;
   grid-template-columns: repeat(9, 11.1%);
-  grid-template-rows: repeat(auto, 80px);
+  grid-template-rows: repeat(auto-fill, minmax(80px, 81px));
 }
 
 .section-content .section{
@@ -628,6 +665,11 @@ aside {
 }
 
 // text
+.fade {
+  opacity: 0;
+  transition-duration: 2s;
+}
+
 .philosophy_header_heading {
   grid-column: 2/ span 4;
   grid-row: 2 / span 3;
@@ -702,6 +744,15 @@ aside {
 
 .border_input {
   width: 100%;
+}
+
+.awaken_elixir_image {
+  align-self: flex-start;
+}
+
+.elixir_text_opener {
+  grid-column: 2/ span 4;
+  grid-row: 5 / span 2;
 }
 
 
@@ -792,6 +843,7 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
   grid-row: 1/ span 6;
 }
 
+
 //footer
  .back_top_arrow {
    grid-column: 2/ span 1;
@@ -858,8 +910,7 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 ul.need_sections {
   display: flex;
-  min-height: 100vh;
-//  max-height: 100vh; try to play around with this max height because it's really fucking things up.
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -867,8 +918,8 @@ ul.need_sections {
 }
 
 ul.need_sections li {
-  display: flex;
-  align-items: stretch;
+  // display: flex;
+  // align-items: stretch;
   cursor: pointer;
   transition: all .5s ease;
   margin-top: 0px;
@@ -890,16 +941,19 @@ ul.need_sections li.active .section-content {
   opacity: 1;
   transform: scaleX(1);
 }
-ul.need_sections li .section-title {
+ul.need_sections li .needs-title {
   flex: 1;
   display: flex;
-  align-items: center;
   width: 100%;
   margin: 0;
   padding: 0;
-  text-align: center;
   color: white;
 }
+
+img.align-self {
+  align-self: center;
+}
+
 ul.need_sections li .section-title h2 {
   margin: 0;
   white-space: nowrap;
@@ -964,6 +1018,11 @@ ul.need_sections li .section-content {
   padding-top: 70px;
   padding-bottom: 70px;
 
+}
+
+.test {
+  grid-column: 3/ span 3;
+  grid-row: 8/ span 3;
 }
 
 .ingredient_list h2 {

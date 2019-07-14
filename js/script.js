@@ -25,3 +25,8 @@ function toggleAccordion() {
 }
 
 section.on('click', toggleAccordion);
+
+
+$( window ).scroll(function() {
+  $( "div.elixir_text_opener" ).addClass( "fade", 1000);
+});
