@@ -667,7 +667,7 @@ aside {
 // text
 .fade {
   opacity: 0;
-  transition-duration: 2s;
+  transition-duration: .5s;
 }
 
 .philosophy_header_heading {
@@ -753,6 +753,7 @@ aside {
 .elixir_text_opener {
   grid-column: 2/ span 4;
   grid-row: 5 / span 2;
+  z-index: 6;
 }
 
 
@@ -909,12 +910,18 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
 ==============================================================================*/
 
 ul.need_sections {
-  display: flex;
-  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
   list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.opener_height {
+  height: 100vh;
 }
 
 ul.need_sections li {
@@ -958,6 +965,7 @@ ul.need_sections li .section-title h2 {
   margin: 0;
   white-space: nowrap;
 }
+
 ul.need_sections li .section-content {
   flex: 1;
   margin: 0;
@@ -1055,4 +1063,79 @@ ul.need_sections li .section-content {
   grid-column: 2/ span 5;
   grid-row: 7/ span 1;
   margin-bottom: 80px;
+}
+
+
+//elixir test
+
+.elixir_start {
+  height: 100vh;
+  position: absolute;
+  width: 90vw;
+}
+
+.height_awaken {
+  grid-column: 1/ span 3;
+  grid-row: 1/ span 1;
+  height: 101vh;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.height_unwind {
+  grid-column: 7/ span 3;
+  grid-row: 1/ span 1;
+  height: 101vh;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.offscreen_awaken {
+  grid-column: 1/ span 3;
+  grid-row: 1/ span 1;
+  height: 100px;
+}
+
+.offscreen_rejuvenate {
+  grid-column: 4/ span 3;
+  grid-row: 1/ span 1;
+  height: 100px;
+}
+
+.offscreen_unwind {
+  grid-column: 7/ span 3;
+  grid-row: 1/ span 1;
+  height: 100px;
+}
+
+
+.awaken_section {
+  background-color: $secondaryGreen;
+}
+
+
+.rejuvenate_section {
+  background-color: $secondaryPink;
+  height: 101vh;
+  grid-column: 4/ span 3;
+  grid-row: 1/ span 1;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+
+.white_rejuvenate {
+  background-color: $primaryWhite;
+  grid-column: 4/ span 3;
+  grid-row: 1/ span 1;
+  height: 90vh;
+  z-index: 1;
+}
+
+.unwind_section {
+  background-color: $secondaryLilac;
+}
+
+.none {
+  display: none;
 }
