@@ -449,7 +449,7 @@ nav a {
 footer .section {
   display: grid;
   grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(auto, 80px); }
+  grid-template-rows: repeat(auto-fill, minmax(80px, 81px)); }
 
 newsletter .section {
   display: grid;
@@ -484,8 +484,7 @@ aside {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: fixed;
-  bottom: 7%;
-  right: 4%;
+  bottom: 5%;
   width: 100px; }
 
 .fade {
@@ -549,7 +548,8 @@ aside {
   border-bottom: 2px solid #222;
   display: flex;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  width: 24px; }
 
 .border_input {
   width: 100%; }
@@ -649,7 +649,7 @@ input::placeholder {
 
 .secret_message {
   grid-column: 1/ span 10;
-  padding-top: 480px;
+  padding-top: 400px;
   padding-bottom: 20px;
   text-align: center; }
 
@@ -674,7 +674,7 @@ input::placeholder {
 .static {
   background-color: #FFFFFF;
   position: relative;
-  margin-bottom: 80vh;
+  margin-bottom: 75vh;
   padding-top: 160px; }
 
 .secret {
@@ -727,9 +727,17 @@ ul.need_sections li .needs-title {
 img.align-self {
   align-self: center; }
 
-ul.need_sections li .section-title h2 {
+ul.need_sections li .section-title {
   margin: 0;
-  white-space: nowrap; }
+  white-space: nowrap;
+  padding-top: 80px;
+  padding-left: 40px; }
+
+ul.need_sections li .rejuvenate {
+  margin: 0;
+  white-space: nowrap;
+  padding-top: 40px;
+  padding-left: 40px; }
 
 ul.need_sections li .section-content {
   flex: 1;
@@ -780,10 +788,6 @@ ul.need_sections li .section-content {
   grid-row: 3/ span 3;
   padding-top: 70px;
   padding-bottom: 70px; }
-
-.test {
-  grid-column: 3/ span 3;
-  grid-row: 8/ span 3; }
 
 .ingredient_list h2 {
   margin-bottom: 0px; }
@@ -869,3 +873,8 @@ ul.need_sections li .section-content {
 
 .none {
   display: none; }
+
+picture.elixir_bottom {
+  position: absolute;
+  width: 30%;
+  bottom: 0%; }

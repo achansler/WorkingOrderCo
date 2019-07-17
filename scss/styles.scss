@@ -614,7 +614,7 @@ nav a {
 footer .section {
   display: grid;
   grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(auto, 80px);
+  grid-template-rows: repeat(auto-fill, minmax(80px, 81px));
 }
 
 newsletter .section {
@@ -659,8 +659,7 @@ aside {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: fixed;
-  bottom: 7%;
-  right: 4%;
+  bottom: 5%;
   width: 100px
 }
 
@@ -740,6 +739,7 @@ aside {
   display: flex;
   align-items: center;
   justify-content: flex-end;;
+  width: 24px;
 }
 
 .border_input {
@@ -864,7 +864,7 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 .secret_message {
   grid-column: 1/ span 10;
-  padding-top: $gridSpace * 6;
+  padding-top: $gridSpace * 5;
   padding-bottom: $baseSpace;
   text-align: center;
 }
@@ -893,7 +893,7 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
 .static{
   background-color: $primaryWhite;
   position: relative;
-  margin-bottom: 80vh;
+  margin-bottom: 75vh;
   padding-top: $gridSpace * 2;
 }
 .secret{
@@ -961,9 +961,18 @@ img.align-self {
   align-self: center;
 }
 
-ul.need_sections li .section-title h2 {
+ul.need_sections li .section-title {
   margin: 0;
   white-space: nowrap;
+  padding-top: $gridSpace;
+  padding-left: $baseSpace * 2;
+}
+
+ul.need_sections li .rejuvenate {
+  margin: 0;
+  white-space: nowrap;
+  padding-top: $baseSpace * 2;
+  padding-left: $baseSpace * 2;
 }
 
 ul.need_sections li .section-content {
@@ -1026,11 +1035,6 @@ ul.need_sections li .section-content {
   padding-top: 70px;
   padding-bottom: 70px;
 
-}
-
-.test {
-  grid-column: 3/ span 3;
-  grid-row: 8/ span 3;
 }
 
 .ingredient_list h2 {
@@ -1138,4 +1142,10 @@ ul.need_sections li .section-content {
 
 .none {
   display: none;
+}
+
+picture.elixir_bottom {
+  position: absolute;
+  width: 30%;
+  bottom: 0%;
 }

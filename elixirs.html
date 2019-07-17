@@ -5,18 +5,34 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
   </head>
   <body>
 
 
     <div class="grid_container">
       <main>
+        <div class="section white elixir_start">
+          <div class="elixir_text_opener">
+            <h2>Our menu of restorative elixirs are hand-made using a mixture of natural herbs, plants, and fruits from around the world.</h2>
+          </div>
+          <div class="awaken_section offscreen_awaken">
+          </div>
+          <div class="white_rejuvenate"></div>
+          <div class="rejuvenate_section rejuvenate_load_position">
+          </div>
+          <div class="unwind_section offscreen_unwind">
+          </div>
+        </div>
         <!-- Full Accordion -->
-        <ul class="need_sections">
+        <ul class="need_sections opener_height none">
           <!-- Awaken Section -->
         <li class="secondaryGreen">
-          <div class="needs_title">
+          <div>
+            <picture><img src="images/awaken_elixir_opener.jpg" alt="elixir"/></picture>
+            <div class="section-title">
+              <h1>Awaken</h1>
+            </div>
           </div>
           <div class="section-content secondaryGreen">
             <div class="section">
@@ -98,11 +114,27 @@
         </li>
 
         <!-- Awaken Section -->
+        <!-- Rejuvenate Section -->
+        <li class="secondaryPink original_space" id="accordion_section">
+          <div>
+            <div class="section-title rejuvenate">
+              <h1>Rejuvenate</h1>
+            </div>
+            <picture class="elixir_bottom"><img src="images/rejuvenate_elixir_opener.jpg" alt="rejuvenate elixir"/></picture>
+          </div>
+          <div class="section-content secondaryPink">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam delectus, eius nostrum aspernatur voluptas enim fugit ipsa magni voluptatem, odio sit accusamus vel id, commodi consequuntur possimus repellat necessitatibus!</p>
+          </div>
+        </li>
+        <!-- Rejuvenate Section -->
         <!-- Unwind Section -->
         <li class="secondaryLilac original_space" id="accordion_section">
-          <!-- <div class="section-title">
-            <h2>Section 3</h2>
-          </div> -->
+          <div>
+            <picture><img src="images/unwind_elixir_opener.jpg" alt="unwind elixir"/></picture>
+            <div class="section-title">
+              <h1>Unwind</h1>
+            </div>
+          </div>
           <div class="section-content secondaryLilac">
             <div class="section">
               <h1 class="test">test</h1>
@@ -111,19 +143,8 @@
           </div>
         </li>
         <!-- Unwind Section -->
-        <!-- Rejuvenate Section -->
-        <li class="secondaryPink original_space" id="accordion_section">
-          <!-- <div class="section-title">
-            <h2>Section 2</h2>
-          </div> -->
-          <div class="section-content secondaryPink">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam delectus, eius nostrum aspernatur voluptas enim fugit ipsa magni voluptatem, odio sit accusamus vel id, commodi consequuntur possimus repellat necessitatibus!</p>
-          </div>
-        </li>
-        <!-- Rejuvenate Section -->
       </ul>
       <!-- Full Accordion -->
-
       </main>
 
       <aside>
@@ -145,13 +166,14 @@
           <h3 class="page_label">Restorative Elixirs</h3>
         </sidebar>
       </aside>
-      <newsletter class="secondaryGray">
+
+      <newsletter class="secondaryGray none">
         <div class="section">
           <p class="newsletter_text">
             To become informed of our seasonal additions and new offerings, follow us or subscribe to our newsletter.
           </p>
           <div class="newsletter_image">
-            <picture><img src="images/newsletter_flower.jpg" alt="line drawing of a flower"/></picture>
+            <img src="images/newsletter_flower.jpg" alt="line drawing of a flower"/>
           </div>
           <div class="newsletter_input">
             <input class="border_input" type="email" placeholder="Your Email">
@@ -166,20 +188,20 @@
         </div>
       </newsletter>
 
-      <footer>
+      <footer class="none">
         <div class="section static">
           <a class="back_top_arrow" id="btt_button">
           </a>
           <div class="footer_main_list">
             <ul class="border">
               <li>
-                <a href="#">Visit Us</a>
+                <a href="visit.html">Visit Us</a>
               </li>
               <li>
                 <a href="philosophy.html">Philosophy</a>
               </li>
               <li>
-                <a href="#">Restorative Elixirs</a>
+                <a href="elixirs.html">Restorative Elixirs</a>
               </li>
             </ul>
           </div>
@@ -202,12 +224,12 @@
             </ul>
           </div>
           <div class="seal_top">
-            <picture><img src="images/seal_img_top.png" alt="top half of Working Order seal" /></picture>
+            <img src="images/seal_img_top.png" alt="top half of Working Order seal" />
           </div>
         </div>
         <div class="section secret_message_philosophy secret">
           <div class="seal_bottom">
-            <picture><img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" /></picture>
+            <img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" />
           </div>
           <h3 class="primaryWhite secret_message">
             CUTE HIDDEN MESSAGE OR QUOTE GOES HERE.
@@ -217,6 +239,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="js/script.js"></script>
 
   </body>
