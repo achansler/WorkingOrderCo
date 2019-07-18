@@ -733,6 +733,21 @@ ul.need_sections li .section-title {
   padding-top: 80px;
   padding-left: 40px; }
 
+.section-title-closed {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  height: 100vh; }
+  .section-title-closed h1 {
+    margin: 0;
+    transform: rotate(-90deg);
+    white-space: nowrap; }
+
 ul.need_sections li .rejuvenate {
   margin: 0;
   white-space: nowrap;
@@ -878,3 +893,17 @@ picture.elixir_bottom {
   position: absolute;
   width: 30%;
   bottom: 0%; }
+
+div.title {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out; }
+
+div.hide_title {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out; }

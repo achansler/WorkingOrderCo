@@ -48,6 +48,17 @@ $( window ).scroll(function() {
   $(".white_rejuvenate").delay(1000).slideUp(500);
 });
 
-$('ul').click(function() {
-  $(this).removeClass('opener_height');
+$("ul").click(function() {
+  $(this).removeClass("opener_height");
 })
+
+// $(".need_sections").click(function() {
+//   $("div.title").addClass("hide_title").delay(1000).queue(function() {
+//       $(this).addClass("none");
+//       $(this).dequeue();
+//   });
+// });
+
+$(".need_sections").click(function() {
+  $("div.title").addClass("none");
+});
