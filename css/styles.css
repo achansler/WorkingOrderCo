@@ -697,9 +697,6 @@ ul.need_sections {
 .flex {
   display: flex; }
 
-.opener_height {
-  height: 100vh; }
-
 ul.need_sections li {
   cursor: pointer;
   transition: all .5s ease;
@@ -734,19 +731,40 @@ ul.need_sections li .section-title {
   padding-left: 40px; }
 
 .section-title-closed {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  width: 100%;
   margin: 0;
   padding: 0;
-  text-align: center;
-  color: white;
-  height: 100vh; }
+  color: #222;
+  top: 75%;
+  z-index: 1; }
   .section-title-closed h1 {
     margin: 0;
     transform: rotate(-90deg);
-    white-space: nowrap; }
+    opacity: 0; }
+
+.show_title {
+  opacity: 1;
+  animation: fadeInRight 1s ease forwards;
+  animation-delay: .35s; }
+
+.rotate_titles {
+  position: sticky;
+  top: 300px;
+  z-index: 1;
+  width: 100%;
+  height: 0px;
+  top: 80%; }
+
+.awaken-closed {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1; }
+
+.rejuvenate-closed {
+  grid-column: 8 / span 1;
+  grid-row: 1 / span 1; }
+
+.unwind-closed {
+  grid-column: 9 / span 1;
+  grid-row: 1 / span 1; }
 
 ul.need_sections li .rejuvenate {
   margin: 0;

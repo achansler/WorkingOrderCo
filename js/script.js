@@ -49,8 +49,9 @@ $( window ).scroll(function() {
 });
 
 $("ul").click(function() {
-  $(this).removeClass("opener_height");
-})
+  $("li").removeClass("height_awaken");
+  $("li").removeClass("height_unwind");
+});
 
 // $(".need_sections").click(function() {
 //   $("div.title").addClass("hide_title").delay(1000).queue(function() {
@@ -61,4 +62,8 @@ $("ul").click(function() {
 
 $(".need_sections").click(function() {
   $("div.title").addClass("none");
+});
+
+$("ul").click(function() {
+  $(".section-title-closed h1").addClass("show_title");
 });
