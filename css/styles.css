@@ -735,7 +735,9 @@ ul.need_sections li .section-title {
   padding: 0;
   color: #222;
   top: 75%;
-  z-index: 1; }
+  z-index: 1;
+  position: fixed;
+  width: 11.1%; }
   .section-title-closed h1 {
     margin: 0;
     transform: rotate(-90deg);
@@ -745,14 +747,6 @@ ul.need_sections li .section-title {
   opacity: 1;
   animation: fadeInRight 1s ease forwards;
   animation-delay: .35s; }
-
-.rotate_titles {
-  position: sticky;
-  top: 300px;
-  z-index: 1;
-  width: 100%;
-  height: 0px;
-  top: 80%; }
 
 .awaken-closed {
   grid-column: 1 / span 1;
