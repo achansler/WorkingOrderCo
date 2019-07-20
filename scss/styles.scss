@@ -345,9 +345,6 @@ footer .secondary_footer {
   background-color: $primaryWhite;
 }
 
-.elixir_header {
-  height: 100vh;
-}
 /*============================================================================
   #Nav
 ==============================================================================*/
@@ -366,9 +363,9 @@ nav a {
 }
 
 .button_container {
-  position: fixed;
-  top: 5%;
-  right: 2%;
+  position: sticky;
+  top: 4%;
+  left: 96%;
   height: $button-height;
   width: $button-width;
   cursor: pointer;
@@ -658,9 +655,9 @@ aside {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  position: fixed;
-  bottom: 5%;
-  width: 100px
+  position: sticky;
+  top: 90%;
+  padding-left: 60px;
 }
 
 // text
@@ -912,17 +909,20 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
 ul.need_sections {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   list-style-type: none;
+}
+
+.overflow_hidden {
+  overflow: hidden;
 }
 
 .flex {
   display: flex;
 }
 
-// .opener_height {
-//   height: 100vh;
-// }
+.aside_height {
+  height: 103vh;
+}
 
 ul.need_sections li {
   // display: flex;
@@ -940,8 +940,6 @@ ul.need_sections li:hover {
 ul.need_sections li.active {
   flex: 77.83%;
   cursor: default;
-}
-ul.need_sections li.active h2 {
 }
 ul.need_sections li.active .section-content {
   flex: 4;
@@ -972,15 +970,15 @@ ul.need_sections li .section-title {
   margin: 0;
   padding: 0;
   color: $primaryBlack;
-  top: 75%;
+  top: 92%;
   z-index: 1;
-  position: fixed;
-  width: 11.1%;
+  position: sticky;
 
   h1 {
     margin: 0;
     transform: rotate(-90deg);
     opacity: 0;
+    padding-left: 75px;
   }
 
 }
@@ -1014,7 +1012,7 @@ ul.need_sections li .rejuvenate {
 }
 
 ul.need_sections li .section-content {
-  flex: 1;
+  // flex: 1;
   margin: 0;
   padding: 0;
   opacity: 0;
@@ -1111,7 +1109,7 @@ ul.need_sections li .section-content {
 //elixir test
 
 .elixir_start {
-  height: 100vh;
+  height: 103vh;
   position: absolute;
   width: 90vw;
 }
@@ -1119,7 +1117,7 @@ ul.need_sections li .section-content {
 .height_awaken {
   grid-column: 1/ span 3;
   grid-row: 1/ span 1;
-  height: 101vh;
+  height: 103vh;
   transition-property: all;
   transition-duration: .5s;
 }
@@ -1127,19 +1125,13 @@ ul.need_sections li .section-content {
 .height_unwind {
   grid-column: 7/ span 3;
   grid-row: 1/ span 1;
-  height: 101vh;
+  height: 103vh;
   transition-property: all;
   transition-duration: .5s;
 }
 
 .offscreen_awaken {
   grid-column: 1/ span 3;
-  grid-row: 1/ span 1;
-  height: 100px;
-}
-
-.offscreen_rejuvenate {
-  grid-column: 4/ span 3;
   grid-row: 1/ span 1;
   height: 100px;
 }
@@ -1156,11 +1148,18 @@ ul.need_sections li .section-content {
 
 .rejuvenate_section {
   background-color: $secondaryPink;
-  height: 101vh;
   grid-column: 4/ span 3;
   grid-row: 1/ span 1;
   transition-property: all;
   transition-duration: 1s;
+}
+
+.height_rejuvenate_tall {
+    height: 103vh;
+}
+
+.height_rejuvenate {
+    height: 103vh;
 }
 
 
@@ -1181,10 +1180,8 @@ ul.need_sections li .section-content {
 
 }
 
-picture.elixir_bottom {
-  position: absolute;
-  width: 30%;
-  bottom: 0%;
+img.elixir_bottom {
+  margin-top: $gridSpace * 1.3125;
 }
 
 div.title {
