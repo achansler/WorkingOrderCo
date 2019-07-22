@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
   </head>
   <body>
-
-
     <div class="grid_container">
       <main>
         <div class="section white elixir_start">
@@ -29,7 +27,7 @@
           <!-- Awaken Section -->
         <li class="awaken_section secondaryGreen">
           <div class="hide_title">
-            <picture><img src="images/awaken_elixir_opener.jpg" alt="elixir"/></picture>
+            <figure><img src="images/awaken_elixir_opener.jpg" alt="elixir"/></figure>
             <div class="section-title">
               <h1>Awaken</h1>
             </div>
@@ -120,10 +118,10 @@
         <!-- Rejuvenate Section -->
         <li class="rejuvenate_section secondaryPink height_rejuvenate">
           <div class="hide_title">
-            <div class="section-title rejuvenate">
+            <div class="section-title rejuvenate elixir_bottom">
               <h1>Rejuvenate</h1>
             </div>
-            <img class="elixir_bottom" src="images/rejuvenate_elixir_opener.jpg" alt="rejuvenate elixir"/>
+            <figure><img src="images/rejuvenate_elixir_opener.jpg" alt="rejuvenate elixir"/></figure>
           </div>
           <div class="section-title-closed rejuvenate-closed">
             <h1 class="rotate rotate_rejuvenate">Rejuvenate</h1>
@@ -136,7 +134,7 @@
         <!-- Unwind Section -->
         <li class="unwind_section secondaryLilac original_space">
           <div class="hide_title">
-            <picture><img src="images/unwind_elixir_opener.jpg" alt="unwind elixir"/></picture>
+            <figure><img src="images/unwind_elixir_opener.jpg" alt="unwind elixir"/></figure>
             <div class="section-title">
               <h1>Unwind</h1>
             </div>
@@ -243,6 +241,14 @@
           <h3 class="primaryWhite secret_message">
             CUTE HIDDEN MESSAGE OR QUOTE GOES HERE.
           </h3>
+          <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+            <video class="jquery-background-video" autoplay muted loop poster="images/poppies.jpg">
+              <source src="images/poppies.mp4" type="video/mp4">
+              <source src="images/poppies.webm" type="video/webm">
+              <source src="images/poppies.ogv" type="video/ogg">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
         </div>
       </footer>
     </div>
@@ -250,6 +256,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="js/script.js"></script>
+    <script src='https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js'></script>
 
   </body>
 </html>

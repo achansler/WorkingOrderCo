@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
@@ -21,13 +22,13 @@
         </header>
         <div class="row secondaryPink philosophy_background d-flex align-items-center">
           <div class="col-lg-3 offset-lg-1">
-            <h1>Philosophy</h1>
-            <p class="medium">
+            <h1 data-aos="fade-right" data-aos-easing="linear">Philosophy</h1>
+            <p data-aos="fade-right" data-aos-easing="linear" class="medium">
               Inspired by the greatest design system of all time — nature — we create products and experiences to get you back into working order.
             </p>
-            <div class="home_links" href="#">
+            <div data-aos="fade-right" data-aos-easing="linear" class="home_links" href="#">
               <a href="#">Read our story</a>
-              <img class="right"
+              <img class="right svg"
                 src="images/arrow_right.svg"
                 alt="top arrow"
                 height="16px"
@@ -35,21 +36,21 @@
             </div>
           </div>
           <div class="col-lg-5 offset-lg-1">
-            <picture><img src="images/philosophy.jpg" alt="photo of a restorative elixir"/></picture>
+            <img data-aos="fade-up" data-aos-easing="linear" src="images/philosophy.jpg" alt="photo of a restorative elixir"/>
           </div>
         </div>
         <div class="row secondaryGreen elixir_background d-flex align-items-center">
           <div class="col-lg-5">
-            <picture><img src="images/elixirs.jpg" alt="photo of a restorative elixir"/></picture>
+            <img data-aos="fade-up" data-aos-easing="linear" src="images/elixirs.jpg" alt="photo of a restorative elixir"/>
           </div>
-          <div class="col-lg-3 offset-lg-1">
+          <div class="col-lg-3 offset-lg-1" data-aos="fade-up" data-aos-easing="linear">
             <h1>Elixirs</h1>
             <p class="medium">
               Founded in Brooklyn, we currently offer a selection of made-to-order restorative elixirs, each influenced by the three needs our bodies have throughout the day: Awaken, Rejuvenate, Unwind.
             </p>
-            <div class="home_links" href="#">
+            <div href="#">
               <a href="#">Discover our products</a>
-              <img class="right"
+              <img class="right svg"
                 src="images/arrow_right.svg"
                 alt="top arrow"
                 height="16px"
@@ -58,7 +59,7 @@
           </div>
         </div>
         <div class="row secondaryOrange visit_background d-flex align-items-center">
-          <div class="col-lg-3 offset-lg-1">
+          <div class="col-lg-3 offset-lg-1" data-aos="fade-up" data-aos-easing="linear">
             <h1>Visit</h1>
             <p class="medium">
               To experience WORKING ORDER for yourself, we invite you to visit us at our mimuted summer pop-up space, running from September through November.
@@ -71,19 +72,19 @@
             </div>
           </div>
           <div class="col-lg-5 offset-lg-1">
-            <picture><img src="images/visit.jpg" alt="Working Order location"/></picture>
+            <img data-aos="fade-up" data-aos-easing="linear" src="images/visit.jpg" alt="Working Order location"/>
           </div>
         </div>
         <div class="row secondaryLilac">
           <div class="col-lg-5 offset-lg-1 d-flex align-items-center">
-            <blockquote>"Get ready for summer with this new all-natural restorative elixirs."<cite>From the <a href="#">New York Times</a></cite></blockquote>
+            <blockquote data-aos="fade-up" data-aos-easing="linear">"Get ready for summer with this new all-natural restorative elixirs."<cite>From the <a href="#">New York Times</a></cite></blockquote>
           </div>
           <div class="col-lg-2 offset-lg-2">
-            <picture><img src="images/quote_image.jpg" alt="drawing of a flower" /></picture>
+            <img src="images/quote_image.jpg" alt="drawing of a flower" />
           </div>
         </div>
 
-        <sidebar>
+        <sidebar data-aos="fade-up" data-aos-easing="linear">
           <div class="button_container" id="toggle">
             <span class="top"></span>
             <span class="middle"></span>
@@ -103,7 +104,7 @@
       </div>
 
       <div class="grid_container">
-        <footer>
+        <footer class="none">
           <div class="section static">
             <a class="back_top_arrow" id="btt_button">
             </a>
@@ -139,16 +140,24 @@
               </ul>
             </div>
             <div class="seal_top">
-              <picture><img src="images/seal_img_top.png" alt="top half of Working Order seal" /></picture>
+              <img src="images/seal_img_top.png" alt="top half of Working Order seal" />
             </div>
           </div>
           <div class="section secret_message_philosophy secret">
             <div class="seal_bottom">
-              <picture><img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" /></picture>
+              <img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" />
             </div>
             <h3 class="primaryWhite secret_message">
               CUTE HIDDEN MESSAGE OR QUOTE GOES HERE.
             </h3>
+            <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+              <video class="jquery-background-video" autoplay muted loop poster="images/grass.jpg">
+                <source src="images/grass.mp4" type="video/mp4">
+                <source src="images/grass.webm" type="video/webm">
+                <source src="images/grass.ogv" type="video/ogg">
+              </video>
+              <div class="video-overlay"></div>
+          </div>
           </div>
         </footer>
       </div>
@@ -156,6 +165,30 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      document.querySelector('html').classList.remove('no-js');
+      if (!window.Cypress) {
+        const scrollCounter = document.querySelector('.js-scroll-counter');
+
+        AOS.init({
+          mirror: true
+        });
+
+        document.addEventListener('aos:in', function(e) {
+          console.log('in!', e.detail);
+        });
+
+        window.addEventListener('scroll', function() {
+          scrollCounter.innerHTML = window.pageYOffset;
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 1000,
+})
+    </script>
 
   </body>
 </html>

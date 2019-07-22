@@ -1,10 +1,11 @@
+// $('.jquery-background-video').bgVideo({fadeIn: 2000});
+
 // menu
 
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
   });
-
 
 
 // back to top button
@@ -59,19 +60,19 @@ $(".need_sections").click(function() {
 
 
 $(".awaken_section").click(function() {
-  $(".awaken-closed h1").removeClass("show_title");
-  $(".rejuvenate-closed h1").addClass("show_title");
-  $(".unwind-closed h1").addClass("show_title");
+  $(".awaken-closed h1").removeClass("show_title").addClass("none");
+  $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
+  $(".unwind-closed h1").removeClass("none").addClass("show_title");
 });
 
 $(".rejuvenate_section").click(function() {
-  $(".rejuvenate-closed h1").removeClass("show_title");
-  $(".awaken-closed h1").addClass("show_title");
-  $(".unwind-closed h1").addClass("show_title");
+  $(".rejuvenate-closed h1").removeClass("show_title").addClass("none");
+  $(".awaken-closed h1").removeClass("none").addClass("show_title");
+  $(".unwind-closed h1").removeClass("none").addClass("show_title");
 });
 
 $(".unwind_section").click(function() {
-  $(".unwind-closed h1").removeClass("show_title");
-  $(".rejuvenate-closed h1").addClass("show_title");
-  $(".awaken-closed h1").addClass("show_title");
+  $(".unwind-closed h1").removeClass("show_title").addClass("none");
+  $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
+  $(".awaken-closed h1").removeClass("none").addClass("show_title");
 });
