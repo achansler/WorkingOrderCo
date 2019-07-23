@@ -250,6 +250,9 @@ nav a {
   overflow: hidden;
   top: 5px; }
 
+div.home_menu {
+  height: 0px; }
+
 .button_container {
   position: sticky;
   top: 4%;
