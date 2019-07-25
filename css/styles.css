@@ -206,7 +206,8 @@ footer .secondary_footer {
   padding-left: 40px; }
 
 .right {
-  float: right; }
+  display: inline-block;
+  margin-left: 15%; }
 
 .home_links {
   margin-top: 50px; }
@@ -252,6 +253,26 @@ nav a {
 
 div.home_menu {
   height: 0px; }
+
+.working_logo {
+  width: 18px;
+  position: sticky;
+  top: 10%;
+  left: 95%;
+  z-index: 1; }
+
+.order_logo {
+  width: 18px;
+  left: 97%;
+  z-index: 1; }
+
+.order_logo_absolute {
+  position: absolute;
+  top: 75%; }
+
+.order_logo_stick {
+  position: sticky;
+  top: 20.5%; }
 
 .button_container {
   position: sticky;

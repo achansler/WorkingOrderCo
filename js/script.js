@@ -1,4 +1,15 @@
-// $('.jquery-background-video').bgVideo({fadeIn: 2000});
+$(function() {
+    var header = $(".order_logo");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 400) {
+            header.removeClass('order_logo_absolute').addClass("order_logo_stick");
+        } else {
+            header.removeClass("order_logo_stick").addClass('order_logo_absolute');
+        }
+    });
+});
 
 // menu
 
