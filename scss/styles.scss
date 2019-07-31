@@ -66,7 +66,13 @@ h1 {
   margin-top: 0px;
 }
 
-.header_text{
+.header_text {
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+}
+
+.header_text h1{
   font-size: 4em;
   text-align: center;
 }
@@ -75,7 +81,7 @@ h2 {
   font-size: 2.375em;
   font-weight: normal;
   line-height: 1.13em;
-  margin-bottom: $baseSpace * 4;
+  // margin-bottom: $baseSpace * 4;
 }
 
 h3 {
@@ -188,14 +194,6 @@ img {
   width: 28px;
 }
 
-.header_background {
-  background: url("../images/home_header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 798px;
-}
-
 .philosophy_background {
   background-image: url("../images/philosohpy_flower.png");
   background-size: 50%;
@@ -302,9 +300,12 @@ footer .secondary_footer {
   width: 10%;
   height: 25vh;
   min-height: 50px;
-  overflow: auto;
-  position: -webkit-sticky;
+  overflow: visible;
   position: sticky;
+  position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
   top: 5%;
   background-color: $primaryWhite;
 }
@@ -331,6 +332,27 @@ footer .secondary_footer {
   background-color: $primaryWhite;
 }
 
+header {
+  height: 2000px;
+}
+
+.home_background {
+height: 2000px;
+}
+
+.white_background {
+  background: rgb(255,255,255);
+background: -webkit-linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+background: linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  height: 2000px;
+  top: 0%;
+  position:absolute;
+  z-index: 1;
+}
+
+
 /*============================================================================
   #Nav
 ==============================================================================*/
@@ -356,6 +378,10 @@ div.home_menu {
 .working_logo {
   width: 18px;
   position: sticky;
+  position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
   top: 10%;
   left: 95%;
   z-index: 1;
@@ -369,16 +395,25 @@ div.home_menu {
 
 .order_logo_absolute {
   position: absolute;
-  top: 75%;
+  padding-top: 500px;
 }
 
 .order_logo_stick {
     position: sticky;
-    top: 20.5%;
+    position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
+    top: 0%;
+    padding-top: 154px;
 }
 
 .button_container {
   position: sticky;
+  position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
   top: 4%;
   left: 96%;
   height: $button-height;
@@ -599,7 +634,7 @@ div.home_menu {
 
 .grid_container {
   display: grid;
-  grid-template-areas: "content content content content content content content content content side" "newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter" "footer footer footer footer footer footer footer footer footer footer";
+  grid-template-areas: "home home home home home home home home home home" "content content content content content content content content content side" "newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter" "footer footer footer footer footer footer footer footer footer footer";
   grid-template-columns: repeat(10, 10%);
   grid-gap: 0px;
   height: 100vh;
@@ -608,6 +643,12 @@ div.home_menu {
 .section {
   display: grid;
   grid-template-columns: repeat(9, 11.1%);
+  grid-template-rows: repeat(auto-fill, minmax(80px, 81px));
+}
+
+home .section {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(auto-fill, minmax(80px, 81px));
 }
 
@@ -627,6 +668,10 @@ newsletter .section {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(auto-fill, minmax(80px, 81px));
+}
+
+home {
+  grid-area: home;
 }
 
 main {
@@ -666,31 +711,49 @@ aside {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: sticky;
+  position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
   top: 90%;
   padding-left: 60px;
 }
 
-// text
 .fade {
   opacity: 0;
   transition-duration: .5s;
 }
 
+.home_header_image {
+  grid-column: 1/ span 10;
+  grid-row: 1 / span 10;
+  position: sticky;
+  position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
+  top: 0;
+}
+
 .philosophy_header_heading {
   grid-column: 2/ span 4;
-  grid-row: 2 / span 3;
+  grid-row: 2 / span 2;
 }
 
 .philosophy_paragraph {
   grid-column: 2/ span 4;
-  grid-row: 5 / span 3;
+  grid-row: 5 / span 2;
 }
 
-.intro_text {
+.intro_text_philisophy {
   grid-column: 2/ span 5;
   grid-row: 2 / span 2;
-  margin-top: $gridSpace;
-  margin-bottom: $gridSpace;
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+.intro_text_home {
+position: absolute;
+height: 2000px;
 }
 
 .philosophy_header {
@@ -763,6 +826,16 @@ aside {
   z-index: 6;
 }
 
+.location {
+  grid-column: 2/ span 1;
+  grid-row: 7 / span 2;
+}
+
+.hours {
+  grid-column: 4/ span 1;
+  grid-row: 7 / span 2;
+}
+
 
 
 
@@ -795,7 +868,7 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
 // images
 .philosophy_elixir{
   grid-column: 7/ span 3;
-  grid-row: 1/ span 8;
+  grid-row: 1/ span 10;
 }
 
 .earthly_pleasures_1 {
@@ -984,6 +1057,10 @@ ul.need_sections li .section-title {
   top: 92%;
   z-index: 1;
   position: sticky;
+  position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
 
   h1 {
     margin: 0;
@@ -1270,4 +1347,14 @@ figure:hover img{
 
 .water_video {
   width: 90%;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
+  z-index: 2;
+  top: 0;
 }
