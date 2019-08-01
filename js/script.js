@@ -75,19 +75,40 @@ $(".need_sections").click(function() {
 
 
 $(".awaken_section").click(function() {
+  $(this).removeClass("closed_column_width");
   $(".awaken-closed h1").removeClass("show_title").addClass("none");
   $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
   $(".unwind-closed h1").removeClass("none").addClass("show_title");
+  setTimeout(function(){
+     $(".rejuvenate_section").addClass('closed_column_width');
+  },300);
+  setTimeout(function(){
+     $(".unwind_section").addClass('closed_column_width');
+  },300);
 });
 
 $(".rejuvenate_section").click(function() {
+  $(this).removeClass("closed_column_width");
   $(".rejuvenate-closed h1").removeClass("show_title").addClass("none");
   $(".awaken-closed h1").removeClass("none").addClass("show_title");
   $(".unwind-closed h1").removeClass("none").addClass("show_title");
+  setTimeout(function(){
+     $(".awaken_section").addClass('closed_column_width');
+  },300);
+  setTimeout(function(){
+     $(".unwind_section").addClass('closed_column_width');
+  },300);
 });
 
 $(".unwind_section").click(function() {
+  $(this).removeClass("closed_column_width");
   $(".unwind-closed h1").removeClass("show_title").addClass("none");
   $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
   $(".awaken-closed h1").removeClass("none").addClass("show_title");
+  setTimeout(function(){
+     $(".awaken_section").addClass('closed_column_width');
+  },300);
+  setTimeout(function(){
+     $(".rejuvenate_section").addClass('closed_column_width');
+  },300);
 });

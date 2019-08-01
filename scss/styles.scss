@@ -39,6 +39,23 @@ $gridSpace: $baseSpace * 4;
   src: url('../fonts/NimbusSanL-Reg.otf'); /* IE9 Compat Modes */
 }
 
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+/**
+ * Firefox specific rule
+ */
+
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+  }
+}
+
 
 
 
@@ -702,6 +719,11 @@ aside {
   grid-row: 1 / span
 }
 
+#no_padding {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 //Overall Text
 .page_label {
   text-transform: uppercase;
@@ -725,8 +747,8 @@ aside {
 }
 
 .home_header_image {
-  grid-column: 1/ span 10;
-  grid-row: 1 / span 10;
+  margin-right: 0px;
+  margin-left: 0px;
   position: sticky;
   position: -webkit-sticky;
  position: -moz-sticky;
@@ -1016,6 +1038,11 @@ ul.need_sections li {
   margin-top: 0px;
   width: 11.08%;
   flex: 1 1 0;
+}
+
+.closed_column_width {
+  max-width: 11.08%;
+  transition: all .5s ease;
 }
 
 
