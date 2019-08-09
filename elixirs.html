@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="grid_container">
@@ -42,18 +42,18 @@
               </div>
             </div>
             <div class="section">
-              <h1 class="needs_header">Awaken</h1>
-              <p class="needs_opening_blurb">
+              <h1 class="needs_header" data-aos="fade">Awaken</h1>
+              <p class="needs_opening_blurb" data-aos="fade">
                 We change our assortment every season. Currently, we offer the following products:
               </p>
             </div>
-            <div class="section">
+            <div class="section" data-aos="fade">
               <div class="product_image">
                 <picture><img src="images/product_img.jpg" alt="elixir"/></picture>
               </div>
               <div class="carosel_placeholder"></div>
             </div>
-            <div class="section">
+            <div class="section" data-aos="fade">
               <div class="top_border">
               </div>
               <div class="ingredient_list">
@@ -79,13 +79,13 @@
               <div class="bottom_border">
               </div>
             </div>
-            <div class="section">
+            <div class="section" data-aos="fade">
               <div class="product_image">
                 <picture><img src="images/product_img.jpg" alt="elixir"/></picture>
               </div>
               <div class="carosel_placeholder"></div>
             </div>
-            <div class="section">
+            <div class="section" data-aos="fade">
               <div class="top_border">
               </div>
               <div class="ingredient_list">
@@ -255,6 +255,33 @@
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="js/script.js"></script>
     <script src='https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js'></script>
+    <script>
+      document.querySelector('html').classList.remove('no-js');
+      if (!window.Cypress) {
+        const scrollCounter = document.querySelector('.js-scroll-counter');
+
+        AOS.init({
+          mirror: true
+        });
+
+        document.addEventListener('aos:in', function(e) {
+          console.log('in!', e.detail);
+        });
+
+        window.addEventListener('scroll', function() {
+          scrollCounter.innerHTML = window.pageYOffset;
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      duration: 2000,
+      offset: 120, // offset (in px) from the original trigger point
+      easing: 'ease-in-out', // default easing for AOS animations
+      delay: 50, // values from 0 to 3000, with step 50ms
+    });
+    </script>
 
   </body>
 </html>
