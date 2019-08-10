@@ -314,17 +314,21 @@ footer .secondary_footer {
 }
 
 .sidebar {
-  width: 10%;
-  height: 25vh;
-  min-height: 50px;
-  overflow: visible;
+  height: 100vh;
   position: sticky;
   position: -webkit-sticky;
- position: -moz-sticky;
- position: -ms-sticky;
- position: -o-sticky;
-  top: 5%;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 0;
   background-color: $primaryWhite;
+}
+
+.sidebar_home {
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  width: 10%;
 }
 
 .main {
@@ -387,21 +391,17 @@ nav a {
   top: 5px;
 }
 
-div.home_menu {
-  height: 0px;
+.logo {
+  width: 40px;
+  z-index: 1;
+  top: 80px;
+  right: 25px;
+  position: absolute;
 }
 
 
 .working_logo {
   width: 18px;
-  position: sticky;
-  position: -webkit-sticky;
- position: -moz-sticky;
- position: -ms-sticky;
- position: -o-sticky;
-  top: 10%;
-  left: 95%;
-  z-index: 1;
 }
 
 .order_logo {
@@ -416,23 +416,24 @@ div.home_menu {
 }
 
 .order_logo_stick {
-    position: sticky;
-    position: -webkit-sticky;
- position: -moz-sticky;
- position: -ms-sticky;
- position: -o-sticky;
-    top: 0%;
-    padding-top: 154px;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 0%;
+  padding-top: 154px;
+}
+
+.button_home {
+  left: 95%;
+  width: 100%;
 }
 
 .button_container {
-  position: sticky;
-  position: -webkit-sticky;
- position: -moz-sticky;
- position: -ms-sticky;
- position: -o-sticky;
-  top: 4%;
-  left: 96%;
+  position: relative;
+  top: 3%;
+  left: 65%;
   height: $button-height;
   width: $button-width;
   cursor: pointer;
@@ -491,7 +492,7 @@ div.home_menu {
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden;
-  z-index: 99;
+  z-index: 1;
 
   &.open {
     opacity: 1;
@@ -714,11 +715,6 @@ aside {
   background-color: $primaryWhite;
 }
 
-.sidebar {
-  grid-column: 10/ span 1;
-  grid-row: 1 / span
-}
-
 #no_padding {
   margin-left: -15px;
   margin-right: -15px;
@@ -732,13 +728,12 @@ aside {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  position: sticky;
-  position: -webkit-sticky;
- position: -moz-sticky;
- position: -ms-sticky;
- position: -o-sticky;
-  top: 90%;
-  padding-left: 60px;
+  position: absolute;
+  bottom: 60px;
+}
+
+.visit_label {
+  bottom: 30px;
 }
 
 .fade {
