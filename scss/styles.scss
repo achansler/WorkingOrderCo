@@ -326,10 +326,10 @@ footer .secondary_footer {
 
 .sidebar_home {
   height: 100vh;
-  position: fixed;
+  position: absolute;
   z-index: 2;
-  width: 10%;
 }
+
 
 .main {
   width: 110%;
@@ -402,32 +402,34 @@ nav a {
 
 .working_logo {
   width: 18px;
+  top: 80px;
+  position: fixed;
+  left: 95.5%;
 }
 
 .order_logo {
   width: 18px;
   left: 97%;
   z-index: 1;
+  padding-top: 300px;
+  position: fixed;
+  margin-top: 158px;
 }
 
 .order_logo_absolute {
-  position: absolute;
+  position: fixed;
   padding-top: 500px;
 }
 
 .order_logo_stick {
-  position: sticky;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
+  position: fixed;
   top: 0%;
   padding-top: 154px;
 }
 
-.button_home {
-  left: 95%;
-  width: 100%;
+div.button_home {
+  position: fixed;
+  left: 96.5%;
 }
 
 .button_container {

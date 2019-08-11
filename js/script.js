@@ -1,15 +1,15 @@
-$(function() {
-    var header = $(".order_logo");
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+//order moving on the homepage
+var expandDiv = document.getElementById("order_logo");
 
-        if (scroll >= 310) {
-            header.removeClass('order_logo_absolute').addClass("order_logo_stick");
-        } else {
-            header.removeClass("order_logo_stick").addClass('order_logo_absolute');
-        }
-    });
-});
+function expanding() {
+  var scrolltop = window.pageYOffset / 5; // get number of pixels document has scrolled vertically
+  $('.order_logo').css('padding-top',300 - scrolltop + 'px');
+}
+
+window.addEventListener('scroll', function() { // on page scroll
+  requestAnimationFrame(expanding); // call parallaxing()
+}, false);
+
 
 // menu
 
