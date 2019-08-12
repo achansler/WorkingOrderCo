@@ -3,8 +3,10 @@
   <head>
     <title>Working Order</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
@@ -13,18 +15,18 @@
     <div class="grid_container">
       <main class="secondaryOrange">
         <div class="section visit_background_page">
-          <div class="philosophy_header_heading">
+          <div class="philosophy_header_heading" data-aos="fade">
             <h2>We invite you to visit our limited-run pop-up space at the Williamsburg N. 3rd Street Market. </h2>
           </div>
-          <div class="philosophy_paragraph">
+          <div class="philosophy_paragraph" data-aos="fade">
             <p>
               Our aim is to create a new kind of “a third-place,” designed to elevate the body, mind and spirit. It is inspired by nature and is intended to serve as a place for personal contemplation, reconnection and restoration.
             </p>
           </div>
-          <div class="philosophy_elixir">
+          <div class="philosophy_elixir" data-aos="fade">
             <picture><img src="images/store.jpg" alt="store"/></picture>
           </div>
-          <div class="location">
+          <div class="location" data-aos="fade">
             <p class="small">
               LOCATIONS
             </p>
@@ -33,7 +35,7 @@
               Brooklyn, NY 11249
               </p>
           </div>
-          <div class="hours">
+          <div class="hours" data-aos="fade">
             <p class="small">
               HOURS
             </p>
@@ -147,6 +149,33 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      document.querySelector('html').classList.remove('no-js');
+      if (!window.Cypress) {
+        const scrollCounter = document.querySelector('.js-scroll-counter');
+
+        AOS.init({
+          mirror: true
+        });
+
+        document.addEventListener('aos:in', function(e) {
+          console.log('in!', e.detail);
+        });
+
+        window.addEventListener('scroll', function() {
+          scrollCounter.innerHTML = window.pageYOffset;
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 1500,
+    offset: 120, // offset (in px) from the original trigger point
+    easing: 'ease-in-out', // default easing for AOS animations
+    delay: 50, // values from 0 to 3000, with step 50ms
+});
+    </script>
 
   </body>
 </html>

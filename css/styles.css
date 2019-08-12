@@ -980,18 +980,16 @@ ul.need_sections li .section-content {
   transition-property: all;
   transition-duration: 1s; }
 
-.height_rejuvenate_tall {
-  height: 103vh; }
-
 .height_rejuvenate {
-  height: 103vh; }
+  height: 103vh;
+  z-index: 0; }
 
 .white_rejuvenate {
   background-color: #FFFFFF;
   grid-column: 4/ span 3;
   grid-row: 1/ span 1;
   height: 90vh;
-  z-index: 1; }
+  z-index: 100; }
 
 .unwind_section {
   background-color: #BECCE1; }
@@ -1001,13 +999,15 @@ ul.need_sections li .section-content {
 
 div.title {
   opacity: 1;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out; }
+  transition-duration: 2s;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out; }
 
 div.hide_title {
   opacity: 0;
+  transition-duration: 2s;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -ms-transition: opacity 1s ease-in-out;
