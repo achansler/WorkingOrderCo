@@ -560,11 +560,12 @@ aside {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 60px;
-  line-height: 1.1em; }
+  top: 96%;
+  line-height: 1.1em;
+  transform-origin: left -50%; }
 
-.visit_label {
-  bottom: 30px; }
+h3.alt_label {
+  line-height: 1.5; }
 
 .fade {
   opacity: 0;
@@ -858,24 +859,12 @@ ul.need_sections li .section-title {
     margin: 0;
     transform: rotate(-90deg);
     opacity: 0;
-    padding-left: 75px; }
+    padding-left: 50%; }
 
 .show_title {
   opacity: 1;
   animation: fadeInRight 1s ease forwards;
   animation-delay: .35s; }
-
-.awaken-closed {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1; }
-
-.rejuvenate-closed {
-  grid-column: 8 / span 1;
-  grid-row: 1 / span 1; }
-
-.unwind-closed {
-  grid-column: 9 / span 1;
-  grid-row: 1 / span 1; }
 
 ul.need_sections li .rejuvenate {
   white-space: nowrap;
