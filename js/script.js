@@ -39,12 +39,11 @@ function toggleAccordion() {
 
 section.on('click', toggleAccordion);
 
-
-$( window ).one("scroll", function() {
+setTimeout(function(){
   $( "div.elixir_text_opener" ).addClass( "fade" );
+  setTimeout(function() { $( ".elixir_start" ).removeClass( "d-flex align-items-center"); }, 350);
   $( ".white_rejuvenate" ).delay(500).animate({ height: "0%"
 }, 500, function() {
-    // Animation complete.
   });
   $( ".awaken_section" ).delay(600).addClass( "height_awaken");
   $( ".unwind_section" ).delay(600).addClass( "height_unwind");
@@ -57,7 +56,7 @@ $( window ).one("scroll", function() {
   setTimeout(function() { $( ".elixir_start" ).addClass( "none"); }, 1000);
   $( ".hide_title" ).delay(1000).addClass( "title");
   setTimeout(function() { $( ".title" ).removeClass( "hide_title"); }, 1100);
-});
+}, 4000);
 
 
 $("ul").click(function() {

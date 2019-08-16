@@ -657,9 +657,8 @@ h3.alt_label {
   align-self: flex-start; }
 
 .elixir_text_opener {
-  grid-column: 2/ span 4;
-  grid-row: 5 / span 2;
-  z-index: 6; }
+  padding: 0px 250px;
+  z-index: 1; }
 
 .location {
   grid-column: 2/ span 1;
@@ -957,9 +956,7 @@ ul.need_sections li .section-content {
   margin-bottom: 80px; }
 
 .elixir_start {
-  height: 103vh;
-  position: absolute;
-  width: 90vw; }
+  height: 103vh; }
 
 .height_awaken {
   grid-column: 1/ span 3;
@@ -1003,7 +1000,7 @@ ul.need_sections li .section-content {
   background-color: #FFFFFF;
   grid-column: 4/ span 3;
   grid-row: 1/ span 1;
-  height: 90vh;
+  height: 100vh;
   z-index: 100; }
 
 .unwind_section {

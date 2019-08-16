@@ -870,9 +870,8 @@ height: 2000px;
 }
 
 .elixir_text_opener {
-  grid-column: 2/ span 4;
-  grid-row: 5 / span 2;
-  z-index: 6;
+  padding: 0px 250px;
+  z-index: 1;
 }
 
 .location {
@@ -1242,8 +1241,6 @@ ul.need_sections li .section-content {
 
 .elixir_start {
   height: 103vh;
-  position: absolute;
-  width: 90vw;
 }
 
 .height_awaken {
@@ -1296,7 +1293,7 @@ ul.need_sections li .section-content {
   background-color: $primaryWhite;
   grid-column: 4/ span 3;
   grid-row: 1/ span 1;
-  height: 90vh;
+  height: 100vh;
   z-index: 100;
 }
 
