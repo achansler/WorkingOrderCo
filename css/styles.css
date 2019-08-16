@@ -978,12 +978,12 @@ ul.need_sections li .section-content {
 .offscreen_awaken {
   grid-column: 1/ span 3;
   grid-row: 1/ span 1;
-  height: 100px; }
+  height: 0px; }
 
 .offscreen_unwind {
   grid-column: 7/ span 3;
   grid-row: 1/ span 1;
-  height: 100px; }
+  height: 0px; }
 
 .awaken_section {
   background-color: #81876E; }
