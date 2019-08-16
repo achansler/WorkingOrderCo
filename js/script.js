@@ -25,7 +25,7 @@ var btn = $('#btt_button');
 
 btn.on('click', function(e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+  $('html, body').animate({scrollTop:0}, '500');
 });
 
 // accordion on the elixir page
@@ -78,6 +78,9 @@ $(".awaken_section").click(function() {
   $(".awaken-closed h1").removeClass("show_title").addClass("none");
   $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
   $(".unwind-closed h1").removeClass("none").addClass("show_title");
+  $(".awaken_arrow_closed").addClass("none");
+  $(".rejuvenate_arrow_closed").removeClass("none");
+  $(".unwind_arrow_closed").removeClass("none");
   setTimeout(function(){
      $(".rejuvenate_section").addClass('closed_column_width');
   },300);
@@ -91,6 +94,9 @@ $(".rejuvenate_section").click(function() {
   $(".rejuvenate-closed h1").removeClass("show_title").addClass("none");
   $(".awaken-closed h1").removeClass("none").addClass("show_title");
   $(".unwind-closed h1").removeClass("none").addClass("show_title");
+  $(".rejuvenate_arrow_closed").addClass("none");
+  $(".awaken_arrow_closed").removeClass("none");
+  $(".unwind_arrow_closed").removeClass("none");
   setTimeout(function(){
      $(".awaken_section").addClass('closed_column_width');
   },300);
@@ -104,6 +110,9 @@ $(".unwind_section").click(function() {
   $(".unwind-closed h1").removeClass("show_title").addClass("none");
   $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
   $(".awaken-closed h1").removeClass("none").addClass("show_title");
+  $(".unwind_arrow_closed").addClass("none");
+  $(".rejuvenate_arrow_closed").removeClass("none");
+  $(".awaken_arrow_closed").removeClass("none");
   setTimeout(function(){
      $(".awaken_section").addClass('closed_column_width');
   },300);

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>elixir_arrow_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="36 4 34.59 5.41 40.17 11 16.9841996 11 16.9841996 13 40.17 13 34.59 18.59 36 20 44 12"></polygon>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Elixirs_D_03" transform="translate(-368.000000, -42.000000)">
+            <g id="ELIXIRS">
+                <g id="Panel-01">
+                    <g id="Button" transform="translate(0.000000, 31.000000)">
+                        <g id="Icons/Navigation/Long-Right" transform="translate(374.000000, 26.000000) rotate(-45.000000) translate(-374.000000, -26.000000) translate(350.000000, 14.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Shape" fill="#1C1C1C" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="Color/Primary/Primary-1" mask="url(#mask-2)" fill="#222222" fill-rule="evenodd">
+                                <g transform="translate(-6.000000, -18.000000)" id="Color">
+                                    <rect x="0" y="0" width="60" height="60"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

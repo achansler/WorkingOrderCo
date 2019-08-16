@@ -212,6 +212,10 @@ img {
   width: 28px;
 }
 
+.rejuvenate_arrow {
+  bottom: 0;
+}
+
 .philosophy_background {
   background-image: url("../images/philosohpy_flower.png");
   background-size: 50%;
@@ -972,8 +976,12 @@ text-transform: uppercase; /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 //footer
  .back_top_arrow {
+   padding-top: 10px;
    grid-column: 2/ span 1;
    grid-row: 2/ span 1;
+ }
+ .back_top_arrow:hover {
+   padding-top: 0px;
  }
 
 .footer_main_list {
@@ -1061,6 +1069,7 @@ ul.need_sections li {
   margin-top: 0px;
   width: 11.08%;
   flex: 1 1 0;
+  position: relative;
 }
 
 .closed_column_width {
@@ -1240,7 +1249,7 @@ ul.need_sections li .section-content {
 .height_awaken {
   grid-column: 1/ span 3;
   grid-row: 1/ span 1;
-  height: 103vh;
+  height: 100vh;
   transition-property: all;
   transition-duration: .5s;
 }
@@ -1248,7 +1257,7 @@ ul.need_sections li .section-content {
 .height_unwind {
   grid-column: 7/ span 3;
   grid-row: 1/ span 1;
-  height: 103vh;
+  height: 100vh;
   transition-property: all;
   transition-duration: .5s;
 }
@@ -1278,7 +1287,7 @@ ul.need_sections li .section-content {
 }
 
 .height_rejuvenate {
-    height: 103vh;
+    height: 100vh;
     z-index: 0;
 }
 
@@ -1336,9 +1345,49 @@ figure img{
   height: 100%;
 }
 
-figure:hover img{
+figure:hover img {
   -webkit-transform: scale3d(1.2, 1.2, 1);
           transform: scale3d(1.2, 1.2, 1);
+  }
+
+
+.elixir_arrow {
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  padding: 40px;
+  transition: all .4s ease-out;
+}
+
+.elixir_arrow_closed {
+  height: 28px;
+  width: 28px;
+}
+
+li:hover .elixir_arrow {
+  padding: 30px;
+}
+
+li:hover .rejuvenate_arrow {
+  padding-bottom: 50px;
+  padding-right: 30px;
+}
+
+.elixir_arrow_closed {
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  z-index: 1;
+  padding-top: 40px;
+  left: 40%;
+  transition: all .4s ease-out;
+}
+
+li:hover .elixir_arrow_closed {
+  padding-top: 35px;
+  left: 35%;
 }
 
 /* Video overlay and content */
@@ -1387,9 +1436,19 @@ figure:hover img{
 .sticky {
   position: sticky;
   position: -webkit-sticky;
- position: -moz-sticky;
- position: -ms-sticky;
- position: -o-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   z-index: 2;
+  top: 0;
+}
+
+.arrow_sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  height: 90vh;
   top: 0;
 }

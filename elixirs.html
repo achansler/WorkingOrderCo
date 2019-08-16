@@ -11,9 +11,9 @@
   <body>
     <div class="grid_container">
       <main>
-        <div class="section white elixir_start" data-aos="fade">
+        <div class="section white elixir_start">
           <div class="elixir_text_opener">
-            <h2>Our menu of restorative elixirs are hand-made using a mixture of natural herbs, plants, and fruits from around the world.</h2>
+            <h2 data-aos="fade-up">Our menu of restorative elixirs are hand-made using a mixture of natural herbs, plants, and fruits from around the world.</h2>
           </div>
           <div class="awaken_section offscreen_awaken">
           </div>
@@ -28,10 +28,22 @@
           <!-- Awaken Section -->
         <li class="awaken_section secondaryGreen">
           <div class="hide_title">
-            <figure><img src="images/awaken_elixir_opener.jpg" alt="elixir"/></figure>
+            <img
+              class="elixir_arrow"
+              src="images/elixir_arrow_right.svg"
+              alt="arrow" />
+            <figure>
+              <img src="images/awaken_elixir_opener.jpg" alt="elixir"/>
+            </figure>
             <div class="section-title">
               <h1>Awaken</h1>
             </div>
+          </div>
+          <div class="arrow_sticky awaken_arrow_closed">
+            <img
+              class="elixir_arrow_closed"
+              src="images/elixir_arrow_left.svg"
+              alt="arrow" />
           </div>
           <div class="section-title-closed awaken-closed">
             <h1 class="rotate rotate_awaken">Awaken</h1>
@@ -114,15 +126,24 @@
             </div>
           </div>
         </li>
-
-        <!-- Awaken Section -->
+        <!-- Awaken Section end -->
         <!-- Rejuvenate Section -->
         <li class="rejuvenate_section secondaryPink height_rejuvenate">
           <div class="hide_title">
             <div class="section-title rejuvenate elixir_bottom">
               <h1>Rejuvenate</h1>
             </div>
+            <img
+              class="elixir_arrow rejuvenate_arrow"
+              src="images/elixir_arrow_right.svg"
+              alt="arrow" />
             <figure><img src="images/rejuvenate_elixir_opener.jpg" alt="rejuvenate elixir"/></figure>
+          </div>
+          <div class="arrow_sticky rejuvenate_arrow_closed">
+            <img
+              class="elixir_arrow_closed"
+              src="images/elixir_arrow_left.svg"
+              alt="arrow" />
           </div>
           <div class="section-title-closed rejuvenate-closed">
             <h1 class="rotate rotate_rejuvenate">Rejuvenate</h1>
@@ -131,14 +152,24 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam delectus, eius nostrum aspernatur voluptas enim fugit ipsa magni voluptatem, odio sit accusamus vel id, commodi consequuntur possimus repellat necessitatibus!</p>
           </div>
         </li>
-        <!-- Rejuvenate Section -->
+        <!-- Rejuvenate Section end -->
         <!-- Unwind Section -->
         <li class="unwind_section secondaryLilac original_space">
           <div class="hide_title">
+            <img
+              class="elixir_arrow"
+              src="images/elixir_arrow_right.svg"
+              alt="arrow" />
             <figure><img src="images/unwind_elixir_opener.jpg" alt="unwind elixir"/></figure>
             <div class="section-title">
               <h1>Unwind</h1>
             </div>
+          </div>
+          <div class="arrow_sticky unwind_arrow_closed">
+            <img
+              class="elixir_arrow_closed"
+              src="images/elixir_arrow_left.svg"
+              alt="arrow" />
           </div>
           <div class="section-title-closed unwind-closed">
             <h1 class="rotate rotate_unwind">Unwind</h1>
@@ -210,31 +241,31 @@
           </a>
           <div class="footer_main_list">
             <ul class="border">
-              <li>
+              <li data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
                 <a href="visit.html">Visit Us</a>
               </li>
-              <li>
+              <li data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
                 <a href="philosophy.html">Philosophy</a>
               </li>
-              <li>
+              <li data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
                 <a href="elixirs.html">Restorative Elixirs</a>
               </li>
             </ul>
           </div>
           <div class="footer_secondary_list">
             <ul class="border">
-              <li class="secondary">
+              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
                 <a href="#">Instagram</a>
               </li>
-              <li class="secondary">
+              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
                 <a href="#">Facebook</a>
               </li>
             </ul>
             <ul class="border">
-              <li class="secondary">
+              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
                 <a href="#">FAQ</a>
               </li>
-              <li class="secondary">
+              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
                 <a href="#">Contact</a>
               </li>
             </ul>
@@ -287,10 +318,11 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init({
-    duration: 1500,
-    offset: 120, // offset (in px) from the original trigger point
-    easing: 'ease-in-out', // default easing for AOS animations
+    duration: 2500,
+    offset: 0, // offset (in px) from the original trigger point
+    easing: 'ease', // default easing for AOS animations
     delay: 50, // values from 0 to 3000, with step 50ms
+    anchorPlacement: 'top-center',
 });
     </script>
 
