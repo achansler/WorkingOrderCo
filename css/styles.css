@@ -658,6 +658,7 @@ h3.alt_label {
 
 .elixir_text_opener {
   padding: 0px 250px;
+  width: 570px;
   z-index: 1; }
 
 .location {
@@ -956,7 +957,7 @@ ul.need_sections li .section-content {
   margin-bottom: 80px; }
 
 .elixir_start {
-  height: 103vh; }
+  height: 100vh; }
 
 .height_awaken {
   grid-column: 1/ span 3;
@@ -1045,17 +1046,13 @@ figure:hover img {
   transform: scale3d(1.2, 1.2, 1); }
 
 .elixir_arrow {
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   position: absolute;
   z-index: 1;
   right: 0;
   padding: 40px;
   transition: all .4s ease-out; }
-
-.elixir_arrow_closed {
-  height: 28px;
-  width: 28px; }
 
 li:hover .elixir_arrow {
   padding: 30px; }
@@ -1065,8 +1062,8 @@ li:hover .rejuvenate_arrow {
   padding-right: 30px; }
 
 .elixir_arrow_closed {
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   position: absolute;
   z-index: 1;
   padding-top: 40px;

@@ -41,7 +41,7 @@ section.on('click', toggleAccordion);
 
 setTimeout(function(){
   $( "div.elixir_text_opener" ).addClass( "fade" );
-  setTimeout(function() { $( ".elixir_start" ).removeClass( "d-flex align-items-center"); }, 350);
+  setTimeout(function() { $( ".elixir_start" ).removeClass( "d-flex align-items-center"); }, 400);
   $( ".white_rejuvenate" ).delay(500).animate({ height: "0%"
 }, 500, function() {
   });
@@ -56,7 +56,7 @@ setTimeout(function(){
   setTimeout(function() { $( ".elixir_start" ).addClass( "none"); }, 1000);
   $( ".hide_title" ).delay(1000).addClass( "title");
   setTimeout(function() { $( ".title" ).removeClass( "hide_title"); }, 1100);
-}, 4000);
+}, 3000);
 
 
 $("ul").click(function() {
