@@ -755,6 +755,16 @@ input:focus:-ms-input-placeholder {
   grid-column: 7/ span 3;
   grid-row: 1/ span 10; }
 
+.philosophy_elixir_image {
+  position: absolute;
+  left: 90%;
+  width: 30%;
+  z-index: 1; }
+
+.philosophy_elixir_image_placement {
+  left: 60%;
+  transition: all 1s ease; }
+
 .earthly_pleasures_1 {
   grid-column: 1/ span 4;
   grid-row: 1/ span 8; }

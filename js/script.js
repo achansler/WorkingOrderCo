@@ -119,3 +119,7 @@ $(".unwind_section").click(function() {
      $(".rejuvenate_section").addClass('closed_column_width');
   },300);
 });
+
+setTimeout(function(){
+  $(".philosophy_elixir_image").addClass("philosophy_elixir_image_placement");
+}, 1000);
