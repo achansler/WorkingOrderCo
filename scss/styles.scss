@@ -992,11 +992,13 @@ input:focus:-ms-input-placeholder {
   left: 90%;
   width: 30%;
   z-index: 1;
+  opacity: 0;
 }
 
 .philosophy_elixir_image_placement {
   left: 60%;
-  transition: all 1s ease;
+  transition: all 1.5s ease;
+  opacity: 1;
 }
 
 .earthly_pleasures_1 {
