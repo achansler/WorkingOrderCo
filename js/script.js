@@ -132,7 +132,7 @@ function expanding() {
   //Or using width
   $('.everything').css('padding-right',100 - scrolltop + 'px');
   $('.everything').css('padding-top',250 - scrolltop + 'px');
-  $('.in').css('padding-top',40 - scrolltop + 'px');
+  $('.in').css('padding-top',0 - scrolltop + 'px');
   $('.nature').css('padding-left',200 - scrolltop + 'px');
   $('.nature').css('padding-top',300 - scrolltop + 'px');
   $('.invites').css('padding-left',150 - scrolltop + 'px');
