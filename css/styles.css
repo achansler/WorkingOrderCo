@@ -218,6 +218,9 @@ img {
   background-image: url("../images/home_secret.png");
   background-size: cover; }
 
+.main_home .row {
+  position: relative; }
+
 li {
   list-style: none;
   line-height: 2.5; }
