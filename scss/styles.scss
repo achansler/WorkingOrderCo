@@ -66,7 +66,6 @@ html {
 body,
  {
   font-family: $bodyFontStack;
-  line-height: 1.5;
   font-size: $baseFontSize;
   color: $primaryBlack;
   -webkit-font-smoothing: antialiased;
@@ -92,6 +91,56 @@ h1 {
 .header_text h1{
   font-size: 4em;
   text-align: center;
+}
+
+.h1 {
+  font-family: 'NantesTrial', serif;
+  font-weight: 300;
+  font-size: 72px;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  height: 105vh;
+  z-index: 2;
+}
+
+.jumbotron div {
+  display: inherit;
+  justify-content: center;
+}
+
+.make_me_sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.inner_jumbotron {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.inner_jumbotron div {
+  -webkit-transition: padding .3s linear;
+       -moz-transition: padding .3s linear;
+        -ms-transition: padding .3s linear;
+         -o-transition: padding .3s linear;
+            transition: padding .3s linear;
+}
+
+.citation {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  font-style: italic;
+  margin-top: 16px;
+}
+
+.citation_opacity {
+  opacity: 1;
+  transition-duration: 1s;
 }
 
 h2 {
@@ -359,20 +408,20 @@ footer .secondary_footer {
 }
 
 header {
-  height: 2000px;
+  height: 6000px;
 }
 
 .home_background {
-height: 2000px;
+height: 6000px;
 }
 
 .white_background {
   background: rgb(255,255,255);
-background: -webkit-linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
-background: -o-linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
-background: linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
   width: 100%;
-  height: 2000px;
+  height: 6000px;
   top: 0%;
   position:absolute;
   z-index: 1;
@@ -417,6 +466,7 @@ nav a {
   padding-top: 300px;
   position: fixed;
   margin-top: 158px;
+  bottom: 5%;
 }
 
 .order_logo_absolute {
@@ -765,7 +815,6 @@ h3.alt_label {
   line-height: 1.5;
 }
 
-
 .fade {
   opacity: 0;
   transition-duration: .5s;
@@ -800,7 +849,7 @@ h3.alt_label {
 
 .intro_text_home {
 position: absolute;
-height: 2000px;
+height: 6000px;
 }
 
 .philosophy_header {

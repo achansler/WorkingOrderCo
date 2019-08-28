@@ -30,7 +30,6 @@ html {
 ==============================================================================*/
 body {
   font-family: "Nimbus", sans-serif;
-  line-height: 1.5;
   font-size: 16px;
   color: #222;
   -webkit-font-smoothing: antialiased;
@@ -53,6 +52,48 @@ h1 {
 .header_text h1 {
   font-size: 4em;
   text-align: center; }
+
+.h1 {
+  font-family: 'NantesTrial', serif;
+  font-weight: 300;
+  font-size: 72px; }
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  height: 105vh;
+  z-index: 2; }
+
+.jumbotron div {
+  display: inherit;
+  justify-content: center; }
+
+.make_me_sticky {
+  position: sticky;
+  top: 0;
+  width: 100%; }
+
+.inner_jumbotron {
+  flex-wrap: wrap;
+  display: flex; }
+
+.inner_jumbotron div {
+  -webkit-transition: padding .3s linear;
+  -moz-transition: padding .3s linear;
+  -ms-transition: padding .3s linear;
+  -o-transition: padding .3s linear;
+  transition: padding .3s linear; }
+
+.citation {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  font-style: italic;
+  margin-top: 16px; }
+
+.citation_opacity {
+  opacity: 1;
+  transition-duration: 1s; }
 
 h2 {
   font-size: 2.375em;
@@ -260,10 +301,10 @@ footer .secondary_footer {
   background-color: #FFFFFF; }
 
 header {
-  height: 2000px; }
+  height: 6000px; }
 
 .home_background {
-  height: 2000px; }
+  height: 6000px; }
 
 .white_background {
   background: white;
@@ -271,7 +312,7 @@ header {
   background: -o-linear-gradient(white 40%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(white 40%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
-  height: 2000px;
+  height: 6000px;
   top: 0%;
   position: absolute;
   z-index: 1; }
@@ -305,7 +346,8 @@ nav a {
   left: 97%;
   padding-top: 300px;
   position: fixed;
-  margin-top: 158px; }
+  margin-top: 158px;
+  bottom: 5%; }
 
 .order_logo_absolute {
   position: fixed;
@@ -600,7 +642,7 @@ h3.alt_label {
 
 .intro_text_home {
   position: absolute;
-  height: 2000px; }
+  height: 6000px; }
 
 .philosophy_header {
   padding-top: 160px; }
@@ -764,7 +806,7 @@ input:focus:-ms-input-placeholder {
 
 .philosophy_elixir_image_placement {
   left: 60%;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
   opacity: 1; }
 
 .earthly_pleasures_1 {

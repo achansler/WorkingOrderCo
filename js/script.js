@@ -123,3 +123,55 @@ $(".unwind_section").click(function() {
 setTimeout(function(){
   $(".philosophy_elixir_image").addClass("philosophy_elixir_image_placement");
 }, 1000);
+
+var expandDiv = document.getElementById("quote");
+
+function expanding() {
+  var scrolltop = window.pageYOffset / 10; // get number of pixels document has scrolled vertically
+
+  //Or using width
+  $('.everything').css('padding-right',100 - scrolltop + 'px');
+  $('.everything').css('padding-top',250 - scrolltop + 'px');
+  $('.in').css('padding-top',40 - scrolltop + 'px');
+  $('.nature').css('padding-left',200 - scrolltop + 'px');
+  $('.nature').css('padding-top',300 - scrolltop + 'px');
+  $('.invites').css('padding-left',150 - scrolltop + 'px');
+  $('.invites').css('padding-top',25 - scrolltop + 'px');
+  $('.us').css('padding-top',200 - scrolltop + 'px');
+  $('.constantly').css('padding-top',380 - scrolltop + 'px');
+  $('.constantly').css('padding-right',50 - scrolltop + 'px');
+  $('.are').css('padding-top',400 - scrolltop + 'px');
+  $('.we').css('padding-left',100 - scrolltop + 'px');
+  $('.we').css('padding-top',230 - scrolltop + 'px');
+  $('.what').css('padding-top',405 - scrolltop + 'px');
+  $('.what').css('padding-left',150 - scrolltop + 'px');
+  $('.be').css('padding-top',250 - scrolltop + 'px');
+  $('.be').css('padding-left',150 - scrolltop + 'px');
+  $('.to').css('padding-top',400 - scrolltop + 'px');
+}
+
+
+window.addEventListener('scroll', function() {
+  requestAnimationFrame(expanding);
+}, false);
+
+
+$(document).ready(function() {
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		if ( windowpos >= 100) {
+      $('.everything, .constantly').css('padding-right',0 + 'px');
+      $('.everything, .in, .nature, .us, .constantly, .are, .we, .be, .to, .what').css('padding-top',0 + 'px');
+      $('.nature, .invites, .we, .what, .be').css('padding-left',0 + 'px');
+		}
+	});
+});
+
+$(document).ready(function() {
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		if ( windowpos >= 5000) {
+      $('.citation').addClass('citation_opacity');
+		}
+	});
+});
