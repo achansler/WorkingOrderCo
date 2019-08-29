@@ -150,9 +150,17 @@ function expanding() {
   $('.to').css('padding-top',400 - scrolltop + 'px');
 }
 
+function expanding_logo(){
+  var scrolltop = window.pageYOffset/ 120;
+  $('.order_logo img').css('padding-top',34 - scrolltop + '%');
+}
+
 
 window.addEventListener('scroll', function() {
   requestAnimationFrame(expanding);
+}, false);
+window.addEventListener('scroll', function() {
+  requestAnimationFrame(expanding_logo);
 }, false);
 
 
@@ -170,7 +178,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$(window).scroll(function() {
 		var windowpos = $(window).scrollTop();
-		if ( windowpos >= 5000) {
+		if ( windowpos >= 4500) {
       $('.citation').addClass('citation_opacity');
 		}
 	});

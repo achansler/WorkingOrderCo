@@ -464,24 +464,21 @@ nav a {
   left: 95.5%;
 }
 
-.order_logo {
+#order_logo {
+  padding-top: 158px;
+}
+
+.order_logo img {
   width: 18px;
-  left: 97%;
-  padding-top: 300px;
-  position: fixed;
-  margin-top: 158px;
-  bottom: 5%;
+  margin-left: 25px;
+  padding-top: 34%;
 }
 
-.order_logo_absolute {
+.logo_apart {
+  height: 100vh;
+  width: 100%;
   position: fixed;
-  padding-top: 500px;
-}
-
-.order_logo_stick {
-  position: fixed;
-  top: 0%;
-  padding-top: 154px;
+  left: 95.5%;
 }
 
 div.button_home {
