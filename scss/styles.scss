@@ -270,6 +270,11 @@ img {
   bottom: 0;
 }
 
+.philosophy_background {
+  background-image: url("../images/philosohpy_flower.png");
+  background-size: 50%;
+  background-repeat: no-repeat; }
+
 .elixir_background {
   background-image: url("../images/elixirs_flower.png");
   background-size: 50%;
@@ -464,6 +469,11 @@ nav a {
   width: 18px;
   margin-left: 25px;
   padding-top: 34%;
+}
+
+.order_logo_start {
+  bottom: 5%;
+ position: fixed;
 }
 
 .logo_apart {

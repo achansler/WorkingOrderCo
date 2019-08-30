@@ -1,16 +1,3 @@
-//order moving on the homepage
-var expandDiv = document.getElementById("order_logo");
-
-function expanding() {
-  var scrolltop = window.pageYOffset / 5; // get number of pixels document has scrolled vertically
-  $('.order_logo').css('padding-top',300 - scrolltop + 'px');
-}
-
-window.addEventListener('scroll', function() { // on page scroll
-  requestAnimationFrame(expanding); // call parallaxing()
-}, false);
-
-
 // menu
 
 $('#toggle').click(function() {
@@ -162,6 +149,11 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   requestAnimationFrame(expanding_logo);
 }, false);
+
+$(window).scroll(function() {
+  $( '#order_logo' ).removeClass( 'order_logo_start' );
+});
+
 
 
 $(document).ready(function() {
