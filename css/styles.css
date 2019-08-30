@@ -36,6 +36,10 @@ body {
   -webkit-text-size-adjust: 100%;
   margin: 0px; }
 
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='4000'] {
+  transition-duration: 4000ms; }
+
 h1 {
   display: block;
   font-family: "NantesTrial", serif;
@@ -188,21 +192,6 @@ img {
 .rejuvenate_arrow {
   bottom: 0; }
 
-.philosophy_background {
-  background-image: url("../images/philosohpy_flower.png");
-  background-size: 50%;
-  background-repeat: no-repeat; }
-
-.philosophy_background_page {
-  background: url("../images/philosohpy_flower.png");
-  background-size: 70%;
-  background-repeat: no-repeat; }
-
-.visit_background_page {
-  background: url("../images/visit_flower.png");
-  background-size: 70%;
-  background-repeat: no-repeat; }
-
 .elixir_background {
   background-image: url("../images/elixirs_flower.png");
   background-size: 50%;
@@ -220,6 +209,10 @@ img {
 
 .main_home .row {
   position: relative; }
+
+.header_flower {
+  grid-column: 2/ span 5;
+  grid-row: 1/ span 7; }
 
 li {
   list-style: none;
@@ -549,7 +542,7 @@ div.button_home {
 .section {
   display: grid;
   grid-template-columns: repeat(9, 11.1%);
-  grid-template-rows: repeat(auto-fill, minmax(80px, 81px)); }
+  grid-template-rows: repeat(auto-fill, 80px); }
 
 home .section {
   display: grid;
@@ -628,11 +621,21 @@ h3.alt_label {
 
 .philosophy_header_heading {
   grid-column: 2/ span 4;
-  grid-row: 2 / span 2; }
+  grid-row: 2 / span 3;
+  z-index: 1; }
+
+.philosophy_header_heading h2 {
+  margin-bottom: 80px; }
+
+.visit_header_heading {
+  grid-column: 2/ span 4;
+  grid-row: 2 / span 3;
+  z-index: 1; }
 
 .philosophy_paragraph {
   grid-column: 2/ span 4;
-  grid-row: 5 / span 2; }
+  grid-row: 5 / span 2;
+  z-index: 2; }
 
 .intro_text_philisophy {
   grid-column: 2/ span 5;
@@ -689,11 +692,15 @@ h3.alt_label {
 
 .location {
   grid-column: 2/ span 1;
-  grid-row: 7 / span 2; }
+  grid-row: 5 / span 2;
+  z-index: 3;
+  margin-top: 40px; }
 
 .hours {
   grid-column: 4/ span 1;
-  grid-row: 7 / span 2; }
+  grid-row: 5 / span 2;
+  z-index: 4;
+  margin-top: 40px; }
 
 input[type=email] {
   border: none;
@@ -960,7 +967,7 @@ img.align-self {
 ul.need_sections li .section-title {
   margin: 0;
   white-space: nowrap;
-  padding-top: 80px;
+  padding-top: 15%;
   padding-left: 40px; }
 
 .section-title-closed {
@@ -987,7 +994,7 @@ ul.need_sections li .section-title {
 
 ul.need_sections li .rejuvenate {
   white-space: nowrap;
-  padding-top: 40px;
+  padding-top: 15%;
   padding-left: 40px;
   margin-bottom: 90px; }
 
