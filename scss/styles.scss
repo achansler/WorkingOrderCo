@@ -1057,6 +1057,14 @@ input:focus:-ms-input-placeholder {
 
 
 // images
+
+#map {
+  // width: 750px;
+  height: 649px;
+  grid-column: 2/ span 11;
+  grid-row: 1/ span 8;
+}
+
 .philosophy_elixir{
   grid-column: 7/ span 3;
   grid-row: 1/ span 10;
