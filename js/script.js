@@ -138,8 +138,8 @@ function expanding() {
 }
 
 function expanding_logo(){
-  var scrolltop = window.pageYOffset/ 120;
-  $('.order_logo img').css('padding-top',34 - scrolltop + '%');
+  var scrolltop = window.pageYOffset/ 80;
+  $('.selected').css('height',64 - scrolltop + 'vh');
 }
 
 
@@ -149,11 +149,6 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   requestAnimationFrame(expanding_logo);
 }, false);
-
-$(window).scroll(function() {
-  $( '#order_logo' ).removeClass( 'order_logo_start' );
-});
-
 
 
 $(document).ready(function() {

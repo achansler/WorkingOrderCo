@@ -350,15 +350,21 @@ nav a {
   margin-left: 25px;
   padding-top: 34%; }
 
-.order_logo_start {
-  bottom: 5%;
-  position: fixed; }
-
-.logo_apart {
-  height: 100vh;
-  width: 100%;
+.box {
+  display: flex;
+  align-items: flex-start;
+  height: 87%;
   position: fixed;
+  top: 80px;
   left: 95.5%; }
+
+.selected {
+  display: flex;
+  align-items: flex-end;
+  height: 64vh;
+  position: fixed;
+  top: 241px;
+  left: 97%; }
 
 div.button_home {
   position: fixed;
