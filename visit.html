@@ -46,15 +46,23 @@
               <img src="images/visit_flower.png" alt="elixir"/>
             </div>
           </div>
+          <div class="section">
+            <div data-aos="fade-up" id="map"></div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="directions_links" href="https://www.google.com/maps/dir//North+3rd+Street+Market,+103+N+3rd+St,+Brooklyn,+NY+11249/@40.7169342,-73.9641728,17z/data=!4m16!1m6!3m5!1s0x89c25960d0a2fe93:0xde4e564fa5bd6aa5!2sNorth+3rd+Street+Market!8m2!3d40.7169342!4d-73.9619841!4m8!1m0!1m5!1m1!1s0x89c25960d0a2fe93:0xde4e564fa5bd6aa5!2m2!1d-73.9619841!2d40.7169342!3e3" target="_blank">
+              <a href="https://www.google.com/maps/dir//North+3rd+Street+Market,+103+N+3rd+St,+Brooklyn,+NY+11249/@40.7169342,-73.9641728,17z/data=!4m16!1m6!3m5!1s0x89c25960d0a2fe93:0xde4e564fa5bd6aa5!2sNorth+3rd+Street+Market!8m2!3d40.7169342!4d-73.9619841!4m8!1m0!1m5!1m1!1s0x89c25960d0a2fe93:0xde4e564fa5bd6aa5!2m2!1d-73.9619841!2d40.7169342!3e3" target="_blank">Get Directions</a>
+              <img class="right svg"
+                src="images/arrow_right.svg"
+                alt="top arrow"
+                height="16px"
+                width="28px" />
+            </div>
+          </div>
         </full>
-        <div class="section">
-          <div id="map"></div>
-        </div>
       </main>
 
       <aside>
         <div class="sidebar">
-          <div class="button_container" id="toggle" data-aos="fade">
+          <div class="button_container" id="toggle" data-aos="fade" data-aos-once="true">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
@@ -68,13 +76,13 @@
               </ul>
             </nav>
           </div>
-          <a href="index.html" data-aos="fade">
+          <a href="index.html" data-aos="fade" data-aos-once="true">
             <img class="logo"
               src="images/working_order_logo.svg"
               alt="Working Order logo"
                />
           </a>
-          <div data-aos="fade">
+          <div data-aos="fade" data-aos-once="true">
             <h3 class="page_label alt_label">Visit Us</h3>
           </div>
         </div>
@@ -150,7 +158,9 @@
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
-                zoom: 14,
+                zoom: 15,
+
+                disableDefaultUI: true,
 
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(40.717137, -73.961995), // New York

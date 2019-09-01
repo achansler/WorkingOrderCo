@@ -368,6 +368,12 @@ footer .secondary_footer {
   margin-top: 50px;
 }
 
+.directions_links {
+  grid-column: 2 / span 3;
+  grid-row: 9 / span 2;
+  margin: 80px 0px;
+}
+
 .sidebar {
   height: 100vh;
   position: sticky;
