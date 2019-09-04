@@ -71,6 +71,7 @@ body,
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 body[data-aos-duration='4000'] [data-aos],
@@ -1559,8 +1560,7 @@ li:hover .elixir_arrow_closed {
   bottom: 0;
   right: 0;
   pointer-events: none;
-  /* Allows right click menu on the video */
-  background: url("https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png") left top repeat;
+  // /* Allows right click menu on the video */
   opacity: 0.3;
 }
 

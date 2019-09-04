@@ -73,7 +73,9 @@ $(".awaken_section").click(function() {
   setTimeout(function(){
      $(".unwind_section").addClass('closed_column_width');
   },300);
+  $(window).trigger('resize');
 });
+
 
 $(".rejuvenate_section").click(function() {
   $(this).removeClass("closed_column_width");
