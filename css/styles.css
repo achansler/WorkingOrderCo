@@ -740,14 +740,15 @@ input[type=submit] {
 .border_input {
   width: 100%; }
 
-#mc_embed_signup_scroll {
+.email_input {
   position: relative;
   z-index: 1; }
 
 input ~ div.newsletter_border {
   border-bottom: 1px solid #222;
   width: 0%;
-  transition: all .4s ease-out; }
+  transition: all .4s ease-out;
+  margin-bottom: 20px; }
 
 .newsletter_input:hover div.newsletter_border {
   width: 118%; }
