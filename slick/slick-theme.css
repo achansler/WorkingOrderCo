@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: pink;
 }
 
 .slick-slider div { transition: none; }
@@ -203,6 +202,7 @@ ul.need_sections .slick-dots li {
     cursor: pointer;
 
     border: none;
+    background-color: transparent;
 
 }
 

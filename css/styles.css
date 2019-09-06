@@ -35,7 +35,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   margin: 0px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #81876E; }
 
 body[data-aos-duration='4000'] [data-aos],
 [data-aos][data-aos][data-aos-duration='4000'] {
@@ -730,22 +731,37 @@ input[type=email] {
   padding-bottom: 20px;
   margin-top: 20px; }
 
+input[type=submit] {
+  border: none;
+  background-color: transparent;
+  padding-bottom: 20px;
+  margin-top: 10px; }
+
 .border_input {
   width: 100%; }
+
+#mc_embed_signup_scroll {
+  position: relative;
+  z-index: 1; }
 
 input ~ div.newsletter_border {
   border-bottom: 1px solid #222;
   width: 0%;
   transition: all .4s ease-out; }
 
-input:hover ~ div.newsletter_border {
-  width: 101%; }
+.newsletter_input:hover div.newsletter_border {
+  width: 118%; }
 
-input:focus ~ div.newsletter_border {
-  width: 101%; }
+.newsletter_input:focus div.newsletter_border {
+  width: 118%; }
 
 input:focus {
   outline: none; }
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: black !important; }
 
 input::placeholder {
   text-transform: uppercase;
@@ -808,17 +824,17 @@ input:focus:-ms-input-placeholder {
   grid-row: 4 / span 1; }
 
 .newsletter_arrow {
-  grid-column: 3/ span 1;
-  grid-row: 4 / span 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 24px;
-  padding-left: 110px;
-  transition: all .4s ease-out; }
+  position: absolute;
+  padding-left: 300px;
+  transition: all .4s ease-out;
+  font-size: 35px;
+  padding-top: 20px;
+  border-bottom: 1px solid #797979;
+  padding-bottom: 24px;
+  cursor: pointer; }
 
-.newsletter_input:hover ~ .newsletter_arrow {
-  padding-left: 120px;
+.newsletter_input:hover label.newsletter_arrow {
+  padding-left: 310px;
   transition: all .4s ease-out; }
 
 #map {
