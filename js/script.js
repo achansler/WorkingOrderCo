@@ -61,6 +61,7 @@ $(".need_sections").click(function() {
 
 $(".awaken_section").click(function() {
   $(this).removeClass("closed_column_width");
+  $(this).removeClass("percent");
   $(".awaken-closed h1").removeClass("show_title").addClass("none");
   $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
   $(".unwind-closed h1").removeClass("none").addClass("show_title");
@@ -79,6 +80,7 @@ $(".awaken_section").click(function() {
 
 $(".rejuvenate_section").click(function() {
   $(this).removeClass("closed_column_width");
+  $(this).removeClass("percent");
   $(".rejuvenate-closed h1").removeClass("show_title").addClass("none");
   $(".awaken-closed h1").removeClass("none").addClass("show_title");
   $(".unwind-closed h1").removeClass("none").addClass("show_title");
@@ -95,6 +97,7 @@ $(".rejuvenate_section").click(function() {
 
 $(".unwind_section").click(function() {
   $(this).removeClass("closed_column_width");
+  $(this).removeClass("percent");
   $(".unwind-closed h1").removeClass("show_title").addClass("none");
   $(".rejuvenate-closed h1").removeClass("none").addClass("show_title");
   $(".awaken-closed h1").removeClass("none").addClass("show_title");
@@ -119,31 +122,30 @@ function expanding() {
   var scrolltop = window.pageYOffset / 10; // get number of pixels document has scrolled vertically
 
   //Or using width
-  $('.everything').css('padding-right',100 - scrolltop + 'px');
-  $('.everything').css('padding-top',250 - scrolltop + 'px');
-  $('.in').css('padding-top',0 - scrolltop + 'px');
-  $('.nature').css('padding-left',150 - scrolltop + 'px');
-  $('.nature').css('padding-top',300 - scrolltop + 'px');
-  $('.invites').css('padding-left',150 - scrolltop + 'px');
-  $('.invites').css('padding-top',25 - scrolltop + 'px');
-  $('.us').css('padding-top',200 - scrolltop + 'px');
-  $('.constantly').css('padding-top',380 - scrolltop + 'px');
-  $('.constantly').css('padding-right',50 - scrolltop + 'px');
-  $('.are').css('padding-top',400 - scrolltop + 'px');
-  $('.we').css('padding-left',100 - scrolltop + 'px');
-  $('.we').css('padding-top',230 - scrolltop + 'px');
-  $('.what').css('padding-top',405 - scrolltop + 'px');
-  $('.what').css('padding-left',150 - scrolltop + 'px');
-  $('.be').css('padding-top',250 - scrolltop + 'px');
-  $('.be').css('padding-left',150 - scrolltop + 'px');
-  $('.to').css('padding-top',400 - scrolltop + 'px');
+  $('.everything').css('padding-right', Math.floor(100 - scrolltop) + 'px');
+  $('.everything').css('padding-top', Math.floor(250 - scrolltop) + 'px');
+  $('.in').css('padding-top', Math.floor(0 - scrolltop) + 'px');
+  $('.nature').css('padding-left', Math.floor(150 - scrolltop) + 'px');
+  $('.nature').css('padding-top', Math.floor(300 - scrolltop) + 'px');
+  $('.invites').css('padding-left', Math.floor (150 - scrolltop) + 'px');
+  $('.invites').css('padding-top', Math.floor(25 - scrolltop) + 'px');
+  $('.us').css('padding-top', Math.floor(200 - scrolltop) + 'px');
+  $('.constantly').css('padding-top', Math.floor(380 - scrolltop) + 'px');
+  $('.constantly').css('padding-right', Math.floor(50 - scrolltop) + 'px');
+  $('.are').css('padding-top', Math.floor(400 - scrolltop) + 'px');
+  $('.we').css('padding-left', Math.floor(100 - scrolltop) + 'px');
+  $('.we').css('padding-top', Math.floor(230 - scrolltop) + 'px');
+  $('.what').css('padding-top', Math.floor(405 - scrolltop) + 'px');
+  $('.what').css('padding-left', Math.floor(150 - scrolltop) + 'px');
+  $('.be').css('padding-top', Math.floor(250 - scrolltop) + 'px');
+  $('.be').css('padding-left', Math.floor(150 - scrolltop) + 'px');
+  $('.to').css('padding-top', Math.floor(400 - scrolltop) + 'px');
 }
 
 function expanding_logo(){
   var scrolltop = window.pageYOffset/ 80;
-  $('.selected').css('height',64 - scrolltop + 'vh');
+  $('.selected').css('height', 64 - scrolltop + 'vh');
 }
-
 
 window.addEventListener('scroll', function() {
   requestAnimationFrame(expanding);
@@ -156,7 +158,7 @@ window.addEventListener('scroll', function() {
 $(document).ready(function() {
 	$(window).scroll(function() {
 		var windowpos = $(window).scrollTop();
-		if ( windowpos >= 100) {
+		if ( windowpos >= 4000) {
       $('.everything, .constantly').css('padding-right',0 + 'px');
       $('.everything, .in, .nature, .us, .constantly, .are, .we, .be, .to, .what').css('padding-top',0 + 'px');
       $('.nature, .invites, .we, .what, .be').css('padding-left',0 + 'px');

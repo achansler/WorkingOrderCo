@@ -76,12 +76,18 @@ h1 {
 
 .make_me_sticky {
   position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   top: 0;
   width: 100%; }
 
 .inner_jumbotron {
   flex-wrap: wrap;
-  display: flex; }
+  display: flex;
+  position: relative;
+  z-index: 2; }
 
 .inner_jumbotron div {
   -webkit-transition: padding .3s linear;
@@ -371,7 +377,12 @@ nav a {
   height: 64vh;
   position: fixed;
   top: 241px;
-  left: 97%; }
+  left: 97%;
+  transition: height .3s linear;
+  -webkit-transition: height .3s linear;
+  -moz-transition: height .3s linear;
+  -ms-transition: height .3s linear;
+  -o-transition: height .3s linear; }
 
 div.button_home {
   position: fixed;
@@ -921,7 +932,7 @@ input:focus:-ms-input-placeholder {
 
 .secret_message {
   grid-column: 1/ span 10;
-  grid-row: 6 / span 1;
+  grid-row: 6 / span 2;
   text-align: center;
   z-index: 1; }
 
@@ -947,7 +958,7 @@ input:focus:-ms-input-placeholder {
 .static {
   background-color: #FFFFFF;
   position: relative;
-  margin-bottom: 75vh;
+  margin-bottom: 70vh;
   padding-top: 160px; }
 
 .secret {
@@ -983,6 +994,9 @@ ul.need_sections li {
   flex: 1 1 0;
   position: relative; }
 
+.percent {
+  max-width: 33.33%; }
+
 .closed_column_width {
   max-width: 11.08%;
   transition: all .5s ease; }
@@ -994,7 +1008,8 @@ ul.need_sections li.active {
 ul.need_sections li.active .section-content {
   flex: 4;
   opacity: 1;
-  transform: scaleX(1); }
+  transform: scaleX(1);
+  max-width: 1015px; }
 
 ul.need_sections li .needs-title {
   flex: 1;
@@ -1289,3 +1304,9 @@ li:hover .elixir_arrow_closed {
   position: -o-sticky;
   height: 90vh;
   top: 0; }
+
+@media (max-width: 576px) {
+  body {
+    background-color: red; }
+  .home_background {
+    display: none; } }
