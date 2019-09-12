@@ -18,6 +18,18 @@ html, body {
   width: 65%;
 }
 
+@media (max-width: 576px) {
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-list {
+    height: 338px;
+  }
+}
+
+
+
 .slick-prev:before,
 .slick-next:before {
   color: black;
@@ -109,13 +121,11 @@ html, body {
 {
     position: relative;
 
-    width: auto !important;
+    width: auto;
     height: auto !important;
     display: flex;
     align-items: center;
 
-    width: 20px;
-    height: 20px;
     padding: 0;
 
     cursor: pointer;

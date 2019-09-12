@@ -3013,8 +3013,24 @@
 
 $(document).on('ready', function() {
   $('.single-item').slick({
+
     dots: true,
     infinite: true,
-    variableWidth: true
+    variableWidth: true,
+    swipe: true,
+    adaptiveHeight: false,
+
+    responsive: [{
+      breakpoint: 575,
+      settings: {
+        variableWidth: false,
+        adaptiveHeight: false,
+        swipte: true
+      }
+    }]
+
+
+
   });
+
 });
