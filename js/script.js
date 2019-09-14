@@ -5,6 +5,10 @@ $('#toggle').click(function() {
    $('#overlay').toggleClass('open');
   });
 
+  $('#toggle-mobile').click(function() {
+     $(this).toggleClass('active');
+     $('#overlay-mobile').toggleClass('open');
+    });
 
 // back to top button
 

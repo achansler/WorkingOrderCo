@@ -465,6 +465,7 @@ nav a {
   top: 80px;
   right: 25px;
   position: absolute;
+  z-index: 3;
 }
 
 
@@ -759,7 +760,7 @@ div.button_home {
   grid-template-areas: "home home home home home home home home home home" "content content content content content content content content content side" "newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter" "footer footer footer footer footer footer footer footer footer footer";
   grid-template-columns: repeat(10, 10%);
   grid-gap: 0px;
-  height: 100vh;
+  // height: 100vh;
 }
 
 .section {
@@ -1207,6 +1208,7 @@ input:focus:-ms-input-placeholder {
 .seal_top {
   grid-column: 2/ span 1;
   grid-row: 4/ span 1;
+  position:absolute;
 }
 
 .seal_bottom {
@@ -1231,6 +1233,7 @@ input:focus:-ms-input-placeholder {
   position: relative;
   margin-bottom: 70vh;
   padding-top: $gridSpace * 2;
+  padding-bottom: $gridSpace;
 }
 .secret{
   max-height: 80vh;
@@ -1650,6 +1653,10 @@ li:hover .elixir_arrow_closed {
   top: 0;
 }
 
+.desktop-none {
+  display: none;
+}
+
 @media (max-width: 576px) {
 
   .home_background {
@@ -1722,6 +1729,10 @@ li:hover .elixir_arrow_closed {
       }
     }
 
+    p.small {
+      font-size: 0.875rem;
+    }
+
     cite {
       display: block;
       font-size: $baseFontSize;
@@ -1730,6 +1741,12 @@ li:hover .elixir_arrow_closed {
       font-style: normal;
       text-transform: uppercase;
     }
+  }
+
+  .citation {
+      opacity: 1;
+      font-style: italic;
+      margin-top: 16px;
   }
 
   .flex-column-reverse-mobile {
@@ -1743,6 +1760,10 @@ li:hover .elixir_arrow_closed {
     display: none;
   }
 
+  .desktop-none {
+    display: inline-block;
+  }
+
   .slick-dots li
   {
       width: 20% !important;
@@ -1750,7 +1771,7 @@ li:hover .elixir_arrow_closed {
   }
 
   div.button_home {
-    left: 85%;
+    left: 87%;
   }
 
   .home_blurb_mobile {
@@ -1775,6 +1796,7 @@ li:hover .elixir_arrow_closed {
 
   .static {
     padding-top: 0px;
+    padding-bottom: 40px;
   }
 
   .back_top_arrow {
@@ -1794,14 +1816,179 @@ li:hover .elixir_arrow_closed {
     padding-left: 0px;
 }
 
-.border {
-  margin: 30px 0px;
+  .border {
+    margin: 30px 0px;
+  }
+
+  .secret_message {
+    padding: 0px 30px;
+  }
+
+  .mobile-logo {
+    margin: 20px 0px 0px 15px;
+    z-index: 2;
+    position: sticky;
+  }
+
+  .mobile-logo-home {
+    margin-left: 5px;
+  }
+
+  .seal_top {
+    grid-column: 4/ span 4;
+    grid-row: 14/ span 1;
+    position: absolute;
+  }
+
+  .heading-mobile {
+    text-align: center;
+    padding: 250px 0px 200px 0px;
+    background-color: $primaryWhite;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .grid_container {
+    display: grid;
+    grid-template-areas: "home home home home home home home home home home" "content content content content content content content content content content" "newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter" "footer footer footer footer footer footer footer footer footer footer";
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(auto-fill, 80px);
+  }
+
+.sidebar_mobile_background {
+    background-color: $primaryWhite;
+    position: sticky;
+    height: 88px;
+    width: 100%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 0px;
+  }
+
+  .page_label {
+    text-transform: uppercase;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: static;
+    top: 0%;
+    line-height: 1.1em;
+    transform-origin: left 0%;
+    margin-left: 15px;
+  }
+
+  .philosophy_elixir_image_mobile{
+    grid-column: 1/ span 10;
+    grid-row: 1 / span 6;
+    margin-bottom: 40px;
+  }
+
+  .philosophy_header_heading {
+    grid-column: 2/ span 8;
+    grid-row: 7 / span 3;
+    z-index: 1;
+  }
+
+  .philosophy_header_heading h2 {
+    margin-bottom: 40px;
 }
 
-.secret_message {
-  padding: 0px 30px;
+.intro_text_philisophy {
+    grid-column: 2/ span 8;
+    grid-row: 1 / span 4;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
+.earthly_pleasures_1 {
+    grid-column: 1/ span 9;
+    grid-row: 1/ span 8;
+  }
 
+.earthly_pleasures_2 {
+    grid-column: 5/ span 6;
+    grid-row: 5 / span 7;
+  }
+
+  .header_text_earthly_pleasures {
+    grid-column: 2/ span 8;
+    grid-row: 15 / span 2;
+    margin-top: 26px;
+  }
+
+.earthly_pleasure_paragraph {
+    grid-column: 2/ span 8;
+    grid-row: 17 / span 3;
+    margin-bottom: 50px;
+  }
+
+  .nature_knows_header {
+    grid-column: 2 / span 8;
+    grid-row: 25/ span 3;
+  }
+
+  .earthly_pleasure_3 {
+    grid-column: 1/ span 10;
+    grid-row: 22 / span 5;
+  }
+
+.nature_knows_header {
+    grid-column: 2 / span 8;
+    grid-row: 33/ span 3;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .nature_knows_paragraph {
+    grid-column: 2/ span 8;
+    grid-row: 1 / span 3;
+  }
+
+.nature_knows_2 {
+    grid-column: 1/ span 10;
+    grid-row: 4/ span 10;
+    height: 250px;
+  }
+
+.quote {
+    padding: 0%;
+  }
+
+.downtime_1 {
+    grid-column: 3/ span 8;
+    grid-row: 1/ span 4;
+    z-index: 3;
+  }
+
+.downtime_2 {
+    grid-column: 1/ span 9;
+    grid-row: 3/ span 7;
+  }
+
+.header_text_downtime {
+    grid-column: 2/ span 8;
+    grid-row: 10/ span 3;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+.downtime_paragraph {
+    grid-column: 2/ span 8;
+    grid-row: 13/ span 3;
+    margin-bottom: 50px;
+  }
+
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
 
 }

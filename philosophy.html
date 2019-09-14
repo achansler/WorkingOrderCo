@@ -10,7 +10,32 @@
 
   </head>
   <body class="loading">
-    <div>
+    <div class="section sidebar_mobile_background desktop-none">
+      <div class="sidebar_home" data-aos="fade" data-aos-once="true">
+        <a class="desktop-none mobile-logo" href="index.html">
+          <img
+            src="images/mobile_logo.svg"
+            alt="working order logo"
+          />
+        </a>
+        <h3 class="page_label alt_label">Philosophy</h3>
+        <div class="button_container button_home" id="toggle-mobile">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay-mobile">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="philosophy.html">Philosophy</a></li>
+              <li><a href="elixirs.html">Elixirs</a></li>
+              <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-none">
       <img class="philosophy_elixir_image" src="images/philosophy_page_elixir.png" alt="elixir"/>
     </div>
 
@@ -18,7 +43,10 @@
       <main class="pink">
         <full>
           <div class="section">
-            <div class="philosophy_header_heading" data-aos="fade-up" data-aos-delay="1000">
+            <div class="desktop-none philosophy_elixir_image_mobile" data-aos="fade-up">
+              <img src="images/philosophy_mobile.jpg" alt="elixir"/>
+            </div>
+            <div class="philosophy_header_heading" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
               <h2 class="text_header">WORKING ORDER was founded on a question: Are there more enjoyable ways to reconnect with nature through the things we drink, eat, and experience?</h2>
               <p>
                 Combining research into functional ingredients with an artisanal approach, our collection of naturally restorative drinks combine sensational flavors with the potent powers of herbs, flowers, plants, and adaptogens.
@@ -27,12 +55,9 @@
                 These drinks are served at our store in New York, with plans to open more stores in select parts of the world.
               </p>
             </div>
-            <div class="header_flower" data-aos="fade">
+            <div class="header_flower mobile-none" data-aos="fade">
               <img src="images/philosohpy_flower.png" alt="elixir"/>
             </div>
-            <!-- <div class="philosophy_elixir">
-              <img data-aos="fade-up" src="images/philosophy_page_elixir.png" alt="elixir"/>
-            </div> -->
           </div>
           <div class="section">
             <div class="intro_text_philisophy" data-aos="fade-up">
@@ -59,7 +84,7 @@
             <p class="nature_knows_paragraph" data-aos="fade-up">
               We don’t believe in food as “fuel”, or as a way to augment and add onto who we are. Rather, we believe the role of food is to restore us to a place where we look and feel our best.
             </p>
-            <div class="nature_knows_1" data-aos="fade-up">
+            <div class="nature_knows_1 mobile-none" data-aos="fade-up">
               <img src="images/nature_knows.jpg" alt="girl looking moody" />
             </div>
             <div class="nature_knows_2 d-flex align-items-center justify-content-center">
@@ -138,30 +163,27 @@
           </div>
           <div class="footer_secondary_list">
             <ul class="border">
-              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
+              <li class="secondary" data-aos="fade" data-aos-anchor-placement="top-bottom">
                 <a href="#">Instagram</a>
               </li>
-              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
+              <li class="secondary" data-aos="fade" data-aos-anchor-placement="top-bottom">
                 <a href="#">Facebook</a>
               </li>
             </ul>
             <ul class="border">
-              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
+              <li class="secondary" data-aos="fade" data-aos-anchor-placement="top-bottom">
                 <a href="#">FAQ</a>
               </li>
-              <li class="secondary" data-aos="fade" data-aos-offset="10" data-aos-anchor-placement="top-bottom">
+              <li class="secondary" data-aos="fade" data-aos-anchor-placement="top-bottom">
                 <a href="#">Contact</a>
               </li>
             </ul>
           </div>
           <div class="seal_top">
-            <img src="images/seal_img_top.png" alt="top half of Working Order seal" />
+            <img src="images/seal.png" alt="top half of Working Order seal" />
           </div>
         </div>
         <div class="section secret_message_philosophy secret">
-          <div class="seal_bottom">
-            <img src="images/seal_img_bottom.png" alt="bottom half of Working Order seal" />
-          </div>
           <h3 class="primaryWhite secret_message">
             Everything in Nature contains all the powers of Nature. Everything is made of one hidden stuff. <br /> ― Ralph Waldo Emerson
           </h3>
