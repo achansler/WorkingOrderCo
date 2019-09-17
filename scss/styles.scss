@@ -1653,11 +1653,52 @@ li:hover .elixir_arrow_closed {
   top: 0;
 }
 
+.gm-style-pbc {
+opacity: 0 !important;
+}
+
 .desktop-none {
   display: none;
 }
 
 @media (max-width: 576px) {
+
+.overlay ul {
+  padding-left: 0px;
+}
+
+nav a {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.875em;
+  overflow: hidden;
+  top: 5px;
+}
+
+.overlay {
+  nav {
+    height: 50%;
+  ul {
+    padding-left: 0px;
+
+    li {
+      a {
+         &:after {
+           content: none;
+         }
+
+         &:hover:after,
+         &:focus:after,
+         &:active:after {
+           content: none;
+         }
+        }
+      }
+    }
+  }
+  }
 
   .home_background {
     display: none;
@@ -1987,8 +2028,36 @@ li:hover .elixir_arrow_closed {
     margin-bottom: 50px;
   }
 
+  .location {
+    grid-column: 2/ span 4;
+    grid-row: 10 / span 2;
+    z-index: 3;
+    margin-top: 20px;
+}
+
+  .hours {
+    grid-column: 2/ span 4;
+    grid-row: 12 / span 2;
+    z-index: 4;
+    margin-top: 20px;
+  }
+
+  .directions_links {
+    grid-column: 2 / span 8;
+    grid-row: 1 / span 2;
+    margin: 40px 0px;
+}
+
+#map {
+    height: 250px;
+    grid-column: 1/ span 10;
+    grid-row: 4/ span 8;
+}
+
+
   [data-aos-delay] {
     transition-delay: 0s !important;
   }
+
 
 }
