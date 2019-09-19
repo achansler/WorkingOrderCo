@@ -1557,23 +1557,10 @@ li:hover .elixir_arrow_closed {
     grid-row: 4/ span 8; }
   [data-aos-delay] {
     transition-delay: 0s !important; }
-  .flex {
-    display: inline; }
-  ul.need_sections li {
-    width: 100%; }
-  .percent {
-    max-width: 100%; }
-  .height_rejuvenate {
-    height: 25vh; }
-  .height_awaken {
-    height: 25vh; }
-  .height_unwind {
-    height: 25vh; }
-  .closed_column_width {
-    max-width: 100%;
-    transition: all .5s ease; }
-  .section-title-closed h1 {
-    transform: rotate(0deg);
-    padding-left: 0%; }
-  .closed_column_width {
-    height: 25vh; } }
+  #mobile_view {
+    display: block; }
+  .elixir_text_opener {
+    padding: 0px 20px;
+    z-index: 1; }
+  .elixir_start {
+    height: 50vh; } }
