@@ -11,8 +11,9 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
   </head>
   <body>
+
     <div class="section sidebar_mobile_background desktop-none">
-      <div class="sidebar_home" data-aos="fade" data-aos-once="true">
+      <div data-aos="fade" data-aos-once="true">
         <a class="desktop-none mobile-logo" href="index.html">
           <img
             src="images/mobile_logo.svg"
@@ -36,6 +37,7 @@
         </div>
       </div>
     </div>
+
     <div class="grid_container">
       <main>
         <div class="section white elixir_start d-flex align-items-center">
@@ -50,16 +52,20 @@
           <div class="unwind_section offscreen_unwind mobile-none">
           </div>
         </div>
-        <!-- Full Accordion -->
+        <!-- Full Accordion Mobile -->
+
+
+
+        <!-- Full Accordion Desktop -->
         <ul class="need_sections opener_height none overflow_hidden">
           <!-- Awaken Section -->
-        <li class="awaken_section secondaryGreen percent">
+        <li class="awaken_section secondaryGreen percent" href="awaken">
           <div class="hide_title">
             <img
               class="elixir_arrow"
               src="images/elixir_arrow_right.svg"
               alt="arrow" />
-            <figure class="mobile-none">
+            <figure class="mobile-none" id="awaken">
               <img src="images/awaken_elixir_opener.jpg" alt="elixir"/>
             </figure>
             <div class="section-title">
@@ -179,7 +185,7 @@
         </li>
         <!-- Awaken Section end -->
         <!-- Rejuvenate Section -->
-        <li class="rejuvenate_section secondaryPink height_rejuvenate percent">
+        <li class="rejuvenate_section secondaryPink height_rejuvenate percent" href="rejuvenate">
           <div class="hide_title">
             <div class="section-title rejuvenate elixir_bottom">
               <h1>Rejuvenate</h1>
@@ -201,13 +207,13 @@
           <div class="section-title-closed rejuvenate-closed">
             <h1 class="rotate rotate_rejuvenate">Rejuvenate</h1>
           </div>
-          <div class="section-content secondaryPink">
+          <div class="section-content secondaryPink" id="rejuvenate">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam delectus, eius nostrum aspernatur voluptas enim fugit ipsa magni voluptatem, odio sit accusamus vel id, commodi consequuntur possimus repellat necessitatibus!</p>
           </div>
         </li>
         <!-- Rejuvenate Section end -->
         <!-- Unwind Section -->
-        <li class="unwind_section secondaryLilac original_space percent">
+        <li class="unwind_section secondaryLilac original_space percent" id="unwind">
           <div class="hide_title">
             <img
               class="elixir_arrow"

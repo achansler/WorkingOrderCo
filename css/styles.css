@@ -1000,7 +1000,6 @@ ul.need_sections li {
   max-width: 33.33%; }
 
 .closed_column_width {
-  max-width: 11.08%;
   transition: all .5s ease; }
 
 ul.need_sections li.active {
