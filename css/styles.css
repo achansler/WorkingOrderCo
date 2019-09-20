@@ -1575,9 +1575,6 @@ li:hover .elixir_arrow_closed {
     transition: opacity .25s ease; }
   div.button_home {
     position: relative; }
-  .section-content .section:not(:first-child) {
-    padding-left: 30px;
-    padding-right: 30px; }
   .section-content .section .needs_image {
     grid-column: 1/ span 10;
     grid-row: 1/ span 5; }
