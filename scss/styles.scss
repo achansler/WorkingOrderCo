@@ -1280,7 +1280,7 @@ ul.need_sections li {
 }
 
 .closed_column_width {
-  // max-width: 11.08%;
+  max-width: 11.08%;
   transition: all .5s ease;
 }
 
@@ -2112,11 +2112,11 @@ nav a {
 //   display: none;
 // }
 
-
+//
 // .need_sections {
 //   display:none;
 // }
-//
+
 #mobile_view {
   display: block;
 }
@@ -2128,6 +2128,83 @@ nav a {
 
 .elixir_start {
     height: 50vh;
+}
+
+.button_container {
+  position: relative;
+  top: 3%;
+  left: 65%;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+
+div.button_home {
+  position: relative;
+  // left: 96.5%;
+}
+
+.section-content .section:not(:first-child) {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.section-content .section .needs_image {
+    grid-column: 1/ span 10;
+    grid-row: 1/ span 5;
+}
+
+.section-content .section .needs_header {
+    grid-column: 1/ span 7;
+    grid-row: 2/ span 1;
+}
+
+.section-content .section .needs_opening_blurb {
+    grid-column: 1/ span 7;
+    grid-row: 3/ span 1;
+}
+
+.section-content .section .product_image {
+    grid-column: 1/ span 7;
+    grid-row: 1/ span 5;
+}
+
+.ingredient_list {
+    grid-column: 1/ span 7;
+    grid-row: 3/ span 3;
+    /* padding-top: 58px; */
+    /* padding-bottom: 70px; */
+}
+
+.top_border {
+    height: 1px;
+    background-color: #222;
+    grid-column: 1/ span 7;
+    grid-row: 2/ span 1;
+}
+
+.mobile_middle_border {
+  height: 1px;
+  background-color: #222;
+  grid-column: 1/ span 7;
+  grid-row: 5/ span 1;
+}
+
+.bottom_border {
+    height: 1px;
+    background-color: #222;
+    grid-column: 1/ span 7;
+    grid-row: 7/ span 1;
+    margin-bottom: 80px;
+}
+
+.ingredient_explainer {
+    grid-column: 1/ span 7;
+    grid-row: 5/ span 3;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 }
