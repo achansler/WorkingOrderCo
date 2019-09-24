@@ -24,8 +24,14 @@ html, body {
   }
 
   .slick-list {
-    height: 338px;
+    height: 263px;
   }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 576px)  {
+  .slick-slide img {
+    width: 100%;
+}
 }
 
 

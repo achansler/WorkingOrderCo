@@ -55,7 +55,7 @@
         <!-- Full Accordion Desktop -->
         <ul class="need_sections opener_height none overflow_hidden">
           <!-- Awaken Section -->
-        <li class="awaken_section secondaryGreen percent" href="awaken">
+        <li class="awaken_section secondaryGreen percent" href="awaken" data-aos="fade-up" data-aos-delay="1000">
           <div class="hide_title">
             <img
               class="elixir_arrow"
@@ -64,11 +64,11 @@
             <figure class="mobile-none" id="awaken">
               <img src="images/awaken_elixir_opener.jpg" alt="elixir"/>
             </figure>
-            <div class="section-title">
+            <div class="section-title mobile-none">
               <h1>Awaken</h1>
             </div>
           </div>
-          <div class="arrow_sticky awaken_arrow_closed">
+          <div class="arrow_sticky awaken_arrow_closed none">
             <img
               class="elixir_arrow_closed"
               src="images/elixir_arrow_left.svg"
@@ -185,9 +185,9 @@
         </li>
         <!-- Awaken Section end -->
         <!-- Rejuvenate Section -->
-        <li class="rejuvenate_section secondaryPink height_rejuvenate percent" href="rejuvenate">
+        <li class="rejuvenate_section secondaryPink height_rejuvenate percent" href="rejuvenate" data-aos="fade-up" data-aos-delay="1500">
           <div class="hide_title">
-            <div class="section-title rejuvenate elixir_bottom">
+            <div class="section-title rejuvenate elixir_bottom mobile-none">
               <h1>Rejuvenate</h1>
             </div>
             <img
@@ -198,7 +198,7 @@
               <img src="images/rejuvenate_elixir_opener.jpg" alt="rejuvenate elixir"/>
             </figure>
           </div>
-          <div class="arrow_sticky rejuvenate_arrow_closed">
+          <div class="arrow_sticky rejuvenate_arrow_closed none">
             <img
               class="elixir_arrow_closed"
               src="images/elixir_arrow_left.svg"
@@ -213,7 +213,7 @@
         </li>
         <!-- Rejuvenate Section end -->
         <!-- Unwind Section -->
-        <li class="unwind_section secondaryLilac original_space percent" id="unwind">
+        <li class="unwind_section secondaryLilac original_space percent" id="unwind" data-aos="fade-up" data-aos-delay="2000">
           <div class="hide_title">
             <img
               class="elixir_arrow"
@@ -222,11 +222,11 @@
             <figure class="mobile-none">
               <img src="images/unwind_elixir_opener.jpg" alt="unwind elixir"/>
             </figure>
-            <div class="section-title">
+            <div class="section-title mobile-none">
               <h1>Unwind</h1>
             </div>
           </div>
-          <div class="arrow_sticky unwind_arrow_closed">
+          <div class="arrow_sticky unwind_arrow_closed none">
             <img
               class="elixir_arrow_closed"
               src="images/elixir_arrow_left.svg"
@@ -307,7 +307,7 @@
         </div>
       </newsletter>
 
-      <footer class="desktop-none" id="mobile_view">
+      <footer class="none" id="mobile_view">
         <div class="section static">
           <a class="back_top_arrow" id="btt_button">
           </a>
@@ -392,6 +392,7 @@
     easing: 'ease', // default easing for AOS animations
     delay: 50, // values from 0 to 3000, with step 50ms
     anchorPlacement: 'top-center',
+    once: true,
 });
     </script>
 
