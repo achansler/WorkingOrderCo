@@ -3023,7 +3023,7 @@ $(document).on('ready', function() {
     responsive: [{
       breakpoint: 575,
       settings: {
-        variableWidth: false,
+        variableWidth: true,
         adaptiveHeight: false,
         swipte: true
       }

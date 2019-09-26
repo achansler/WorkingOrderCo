@@ -1617,4 +1617,11 @@ li:hover .elixir_arrow_closed {
   .rejuvenate_arrow {
     top: 0%; }
   .section-title-closed h1 {
-    opacity: 1; } }
+    opacity: 1; }
+  body {
+    overflow-x: hidden; }
+  .section-content {
+    overflow-x: hidden; }
+  ul.need_sections li .section-content .section:not(.full) {
+    padding-left: 16px;
+    padding-right: 16px; } }

@@ -2160,4 +2160,17 @@ div.button_home {
     opacity: 1;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.section-content {
+  overflow-x: hidden;
+}
+
+ul.need_sections li .section-content .section:not(.full) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 }
