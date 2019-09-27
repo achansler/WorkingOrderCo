@@ -1659,7 +1659,7 @@ opacity: 0 !important;
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
 .overlay ul {
   padding-left: 0px;
@@ -1860,7 +1860,7 @@ nav a {
 }
 
   .border {
-    margin: 30px 0px;
+    margin: 20px 0px;
   }
 
   .secret_message {
@@ -1868,9 +1868,13 @@ nav a {
   }
 
   .mobile-logo {
-    margin: 10px 0px 0px 15px;
+    margin: 0px 0px 0px 15px;
     z-index: 2;
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
   }
 
   .mobile-logo-home {
@@ -1906,6 +1910,10 @@ nav a {
 .sidebar_mobile_background {
     background-color: $primaryWhite;
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     height: 88px;
     width: 100%;
     z-index: 10;
@@ -2069,7 +2077,7 @@ nav a {
   height: 45vh;
 }
 
-#mobile_view {
+.mobile_view {
   display: block;
 }
 
@@ -2091,11 +2099,6 @@ nav a {
   cursor: pointer;
   z-index: 100;
   transition: opacity .25s ease;
-}
-
-div.button_home {
-  position: relative;
-  // left: 96.5%;
 }
 
 .section-content .section .needs_image {
@@ -2171,6 +2174,37 @@ body {
 ul.need_sections li .section-content .section:not(.full) {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+h1.rotate {
+  font-size: 2em;
+}
+
+.newsletter_text {
+    grid-column: 2/ span 8;
+    grid-row: 3 / span 1;
+}
+
+.newsletter_input {
+    grid-column: 2/ span 8;
+    grid-row: 4 / span 2;
+}
+
+.newsletter_arrow {
+    padding-left: 275px;
+}
+
+.newsletter_image {
+    grid-column: 1/ span 10;
+    grid-row: 5/ span 6;
+}
+
+li.secondary {
+    line-height: 2;
+}
+
+.elixir-body {
+  background-color: $primaryWhite;
 }
 
 }

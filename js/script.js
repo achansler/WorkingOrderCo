@@ -21,7 +21,7 @@ btn.on('click', function(e) {
 
 // accordion on the elixir page
 
-const mq = window.matchMedia( "(min-width: 768px)" );
+const mq = window.matchMedia( "(min-width: 769px)" );
 
 
 if (mq.matches) {
@@ -144,11 +144,15 @@ if (mq.matches) {
     setTimeout(function() { $( ".need_sections" ).removeClass( "none"); }, 0);
     setTimeout(function() { $( ".rejuvenate_section" ).removeAttr("data-aos data-aos-delay") }, 2000);
     setTimeout(function() { $( ".unwind_section" ).removeAttr("data-aos data-aos-delay") }, 2000);
-    setTimeout(function() { $( "footer" ).removeClass( "none"); }, 5000);
     $( ".need_sections" ).delay(0).addClass( "flex");
     $( ".hide_title" ).delay(1000).addClass( "title");
     setTimeout(function() { $( ".title" ).removeClass( "hide_title"); }, 0);
   }, 0);
+
+  setTimeout(function() { $( "footer" ).removeClass( "none"); }, 4500);
+  setTimeout(function() { $( "footer" ).addClass( "mobile_view"); }, 4500);
+  setTimeout(function() { $( "newsletter" ).removeClass( "none"); }, 4000);
+  setTimeout(function() { $( "newsletter" ).addClass( "desktop-none"); }, 4000);
 
 
   $("ul").click(function() {

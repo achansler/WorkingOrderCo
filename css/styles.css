@@ -1312,7 +1312,7 @@ li:hover .elixir_arrow_closed {
 .desktop-none {
   display: none; }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .overlay ul {
     padding-left: 0px; }
   .none {
@@ -1424,13 +1424,17 @@ li:hover .elixir_arrow_closed {
     grid-row: 9/ span 6;
     padding-left: 0px; }
   .border {
-    margin: 30px 0px; }
+    margin: 20px 0px; }
   .secret_message {
     padding: 0px 30px; }
   .mobile-logo {
-    margin: 10px 0px 0px 15px;
+    margin: 0px 0px 0px 15px;
     z-index: 2;
-    position: sticky; }
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky; }
   .mobile-logo-home {
     margin-left: 5px; }
   .seal_top {
@@ -1452,6 +1456,10 @@ li:hover .elixir_arrow_closed {
   .sidebar_mobile_background {
     background-color: #FFFFFF;
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     height: 88px;
     width: 100%;
     z-index: 10;
@@ -1560,7 +1568,7 @@ li:hover .elixir_arrow_closed {
     height: 45vh; }
   .height_unwind {
     height: 45vh; }
-  #mobile_view {
+  .mobile_view {
     display: block; }
   .elixir_text_opener {
     padding: 0px 20px;
@@ -1576,8 +1584,6 @@ li:hover .elixir_arrow_closed {
     cursor: pointer;
     z-index: 100;
     transition: opacity .25s ease; }
-  div.button_home {
-    position: relative; }
   .section-content .section .needs_image {
     grid-column: 1/ span 10;
     grid-row: 1/ span 5; }
@@ -1624,4 +1630,21 @@ li:hover .elixir_arrow_closed {
     overflow-x: hidden; }
   ul.need_sections li .section-content .section:not(.full) {
     padding-left: 16px;
-    padding-right: 16px; } }
+    padding-right: 16px; }
+  h1.rotate {
+    font-size: 2em; }
+  .newsletter_text {
+    grid-column: 2/ span 8;
+    grid-row: 3 / span 1; }
+  .newsletter_input {
+    grid-column: 2/ span 8;
+    grid-row: 4 / span 2; }
+  .newsletter_arrow {
+    padding-left: 275px; }
+  .newsletter_image {
+    grid-column: 1/ span 10;
+    grid-row: 5/ span 6; }
+  li.secondary {
+    line-height: 2; }
+  .elixir-body {
+    background-color: #FFFFFF; } }
