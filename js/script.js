@@ -50,7 +50,7 @@ if (mq.matches) {
     setTimeout(function() { $( "footer" ).removeClass( "none"); }, 1500);
     setTimeout(function() { $( ".need_sections" ).removeClass( "none"); }, 1000);
     $( ".need_sections" ).delay(1000).addClass( "flex");
-    setTimeout(function() { $( "newsletter" ).removeClass( "desktop-none"); }, 1500);
+    setTimeout(function() { $( "newsletter" ).removeClass( "none"); }, 1500);
     setTimeout(function() { $( ".elixir_start" ).addClass( "none"); }, 1000);
     $( ".hide_title" ).delay(1000).addClass( "title");
     setTimeout(function() { $( ".title" ).removeClass( "hide_title"); }, 1100);
@@ -142,6 +142,7 @@ if (mq.matches) {
     setTimeout(function() { $( ".awaken_section" ).removeClass( "offscreen_awaken"); }, 0);
     setTimeout(function() { $( ".unwind_section" ).removeClass( "offscreen_unwind"); }, 0);
     setTimeout(function() { $( ".need_sections" ).removeClass( "none"); }, 0);
+    setTimeout(function() { $( ".awaken_section" ).removeAttr("data-aos data-aos-delay") }, 2000);
     setTimeout(function() { $( ".rejuvenate_section" ).removeAttr("data-aos data-aos-delay") }, 2000);
     setTimeout(function() { $( ".unwind_section" ).removeAttr("data-aos data-aos-delay") }, 2000);
     $( ".need_sections" ).delay(0).addClass( "flex");
@@ -152,7 +153,6 @@ if (mq.matches) {
   setTimeout(function() { $( "footer" ).removeClass( "none"); }, 4500);
   setTimeout(function() { $( "footer" ).addClass( "mobile_view"); }, 4500);
   setTimeout(function() { $( "newsletter" ).removeClass( "none"); }, 4000);
-  setTimeout(function() { $( "newsletter" ).addClass( "desktop-none"); }, 4000);
 
 
   $("ul").click(function() {

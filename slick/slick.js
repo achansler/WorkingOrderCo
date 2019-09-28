@@ -3023,9 +3023,10 @@ $(document).on('ready', function() {
     responsive: [{
       breakpoint: 575,
       settings: {
-        variableWidth: true,
+        variableWidth: false,
         adaptiveHeight: false,
-        swipte: true
+        swipe: true,
+        infinite: true
       }
     }]
 
