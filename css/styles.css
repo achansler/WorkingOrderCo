@@ -179,6 +179,9 @@ blockquote {
 .secondaryLilac {
   background-color: #BECCE1; }
 
+.secondaryPurple {
+  background-color: #B9B4C8; }
+
 .secondaryYellow {
   background-color: #DAC047; }
 
@@ -225,6 +228,10 @@ img {
 
 .header_flower {
   grid-column: 2/ span 5;
+  grid-row: 1/ span 7; }
+
+.header_flower_contact {
+  grid-column: 5/ span 5;
   grid-row: 1/ span 7; }
 
 li {
@@ -657,6 +664,12 @@ h3.alt_label {
   grid-column: 2/ span 4;
   grid-row: 2 / span 3;
   z-index: 1; }
+
+.contact_header_heading {
+  grid-column: 2/ span 4;
+  grid-row: 3 / span 3;
+  z-index: 1;
+  margin-bottom: 50px; }
 
 .philosophy_header_heading h2 {
   margin-bottom: 80px; }
@@ -1569,11 +1582,11 @@ li:hover .elixir_arrow_closed {
     grid-column: 1/ span 10;
     grid-row: 4/ span 8; }
   .height_rejuvenate {
-    height: 35vh; }
+    height: 40vh; }
   .height_awaken {
-    height: 35vh; }
+    height: 40vh; }
   .height_unwind {
-    height: 35vh; }
+    height: 40vh; }
   .mobile_view {
     display: block; }
   .elixir_text_opener {
@@ -1678,7 +1691,7 @@ li:hover .elixir_arrow_closed {
     margin: 0;
     padding: 0;
     color: #222;
-    top: 81%;
+    top: 90%;
     z-index: 1;
     position: sticky;
     position: -webkit-sticky;

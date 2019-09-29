@@ -12,6 +12,7 @@ $secondaryGreen: #81876E;
 $secondaryOrange: #C8684C;
 $secondaryLilac: #BECCE1;
 $secondaryYellow: #DAC047;
+$secondaryPurple: #B9B4C8;
 $secondaryGray: #D1CFCD;
 
 // Type
@@ -251,6 +252,9 @@ blockquote {
 .secondaryLilac {
   background-color: $secondaryLilac;
 }
+.secondaryPurple {
+  background-color: $secondaryPurple;
+}
 .secondaryYellow {
   background-color: $secondaryYellow;
 }
@@ -307,6 +311,11 @@ img {
 
 .header_flower {
   grid-column: 2/ span 5;
+  grid-row: 1/ span 7;
+}
+
+.header_flower_contact {
+  grid-column: 5/ span 5;
   grid-row: 1/ span 7;
 }
 
@@ -866,6 +875,13 @@ h3.alt_label {
   grid-column: 2/ span 4;
   grid-row: 2 / span 3;
   z-index: 1;
+}
+
+.contact_header_heading {
+  grid-column: 2/ span 4;
+  grid-row: 3 / span 3;
+  z-index: 1;
+  margin-bottom: 50px;
 }
 
 .philosophy_header_heading h2 {
@@ -2076,15 +2092,15 @@ nav a {
 
 
 .height_rejuvenate {
-  height: 35vh;
+  height: 40vh;
 }
 
 .height_awaken {
-  height: 35vh;
+  height: 40vh;
 }
 
 .height_unwind {
-  height: 35vh;
+  height: 40vh;
 }
 
 .mobile_view {
@@ -2253,7 +2269,7 @@ li.secondary {
   margin: 0;
   padding: 0;
   color: #222;
-  top: 81%;
+  top: 90%;
   z-index: 1;
   position: sticky;
   position: -webkit-sticky;
