@@ -808,6 +808,7 @@ footer {
 
 newsletter {
   grid-area: newsletter;
+  z-index: 2;
 }
 
 
@@ -970,6 +971,7 @@ input[type=email] {
   background-color: transparent;
   padding-bottom: $baseSpace;
   margin-top: $baseSpace;
+  font-size: $baseFontSize;
 }
 
 input[type=submit] {
@@ -980,7 +982,7 @@ input[type=submit] {
 }
 
 .border_input {
-  width: 100%;
+  width: 112%;
 }
 
 .email_input {
@@ -989,14 +991,14 @@ input[type=submit] {
 }
 
 input ~ div.newsletter_border {
-  border-bottom: 1px solid $primaryBlack;
+  border-bottom: 2px solid $primaryBlack;
   width: 0%;
   transition: all .4s ease-out;
   margin-bottom: 20px;
 }
 
 .newsletter_input:hover div.newsletter_border {
-  width: 118%;
+  width: 113%;
 }
 
 .newsletter_input:focus div.newsletter_border {
@@ -1079,17 +1081,16 @@ input:focus:-ms-input-placeholder {
 
 .newsletter_arrow {
   position: absolute;
-  padding-left: 300px;
+  padding-left: 20%;
   transition: all .4s ease-out;
   font-size: 35px;
   padding-top: 20px;
-  border-bottom: 1px solid #797979;
   padding-bottom: 24px;
   cursor: pointer;
 }
 
 .newsletter_input:hover  label.newsletter_arrow {
-  padding-left: 310px;
+  padding-left: 21%;
   transition: all .4s ease-out;
 }
 
@@ -1234,6 +1235,7 @@ input:focus:-ms-input-placeholder {
   margin-bottom: 70vh;
   padding-top: $gridSpace * 2;
   padding-bottom: $gridSpace;
+  z-index: 3;
 }
 .secret{
   max-height: 80vh;
@@ -1661,6 +1663,10 @@ opacity: 0 !important;
 
 @media (max-width: 769px) {
 
+.sidebar_home {
+  height: 0vh;
+}
+
 .overlay ul {
   padding-left: 0px;
 }
@@ -1847,6 +1853,10 @@ nav a {
     grid-column: 2/ span 1;
     grid-row: 1/ span 1;
   }
+
+  .back_top_arrow:hover {
+    padding-top: 30px;
+}
 
   .footer_main_list {
     grid-column: 2/ span 8;
@@ -2107,8 +2117,9 @@ nav a {
 }
 
 .section-content .section .needs_header {
-    grid-column: 1/ span 7;
-    grid-row: 2/ span 1;
+  grid-column: 1/ span 7;
+  grid-row: 1/ span 2;
+  margin-top: 50px;
 }
 
 .section-content .section .needs_opening_blurb {
@@ -2195,11 +2206,15 @@ h1.rotate {
 }
 
 .newsletter_arrow {
-    padding-left: 75%;
+    padding-left: 70%;
+}
+
+.border_input {
+  width: 99%;
 }
 
 .newsletter_input:hover label.newsletter_arrow {
-    padding-left: 275px;
+    padding-left: 73%;
     transition: all .4s ease-out;
 }
 
