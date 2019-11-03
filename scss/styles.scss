@@ -16,7 +16,7 @@ $secondaryPurple: #B9B4C8;
 $secondaryGray: #D1CFCD;
 
 // Type
-$headerFontStack: 'NantesTrial', serif;
+$headerFontStack: 'Nantes', serif;
 
 $bodyFontStack: 'Nimbus', sans-serif;
 $baseFontSize: 16px; // Henceforth known as 1em
@@ -28,11 +28,11 @@ $gridSpace: $baseSpace * 4;
 
 
 @font-face {
-  font-family: 'NantesTrial';
-  src: url('../fonts/NantesTrialWeb-Light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/NantesTrialWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/NantesTrialWeb-Light.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/NantesTrialWeb-Light.woff') format('woff'), /* Pretty Modern Browsers */
+  font-family: 'Nantes';
+  src: url('../fonts/NantesWeb-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/NantesWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NantesWeb-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/NantesWeb-Light.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
 @font-face {
@@ -44,7 +44,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /**
@@ -102,7 +102,7 @@ h1 {
 }
 
 .h1 {
-  font-family: 'NantesTrial', serif;
+  font-family: 'Nantes', serif;
   font-weight: 300;
   font-size: 72px;
 }
@@ -1908,7 +1908,7 @@ nav a {
 
   .heading-mobile {
     text-align: center;
-    padding: 250px 0px 200px 0px;
+    padding: 100px 0px 100px 0px;
     background-color: $primaryWhite;
   }
 

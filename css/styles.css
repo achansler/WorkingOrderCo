@@ -2,10 +2,10 @@
   #General Variables
 ==============================================================================*/
 @font-face {
-  font-family: 'NantesTrial';
-  src: url("../fonts/NantesTrialWeb-Light.eot");
+  font-family: 'Nantes';
+  src: url("../fonts/NantesWeb-Light.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/NantesTrialWeb-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NantesTrialWeb-Light.woff2") format("woff2"), url("../fonts/NantesTrialWeb-Light.woff") format("woff"); }
+  src: url("../fonts/NantesWeb-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NantesWeb-Light.woff2") format("woff2"), url("../fonts/NantesWeb-Light.woff") format("woff"); }
 
 @font-face {
   font-family: 'Nimbus';
@@ -16,7 +16,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  font-weight: 400; }
+  font-weight: 300; }
 
 /**
  * Firefox specific rule
@@ -44,7 +44,7 @@ body[data-aos-duration='4000'] [data-aos],
 
 h1 {
   display: block;
-  font-family: "NantesTrial", serif;
+  font-family: "Nantes", serif;
   font-weight: 300;
   font-size: 3.875em;
   line-height: 1.16em;
@@ -60,7 +60,7 @@ h1 {
   text-align: center; }
 
 .h1 {
-  font-family: 'NantesTrial', serif;
+  font-family: 'Nantes', serif;
   font-weight: 300;
   font-size: 72px; }
 
@@ -148,7 +148,7 @@ li {
   font-size: 16px; }
 
 blockquote {
-  font-family: "NantesTrial", serif;
+  font-family: "Nantes", serif;
   font-size: 5.625em;
   line-height: 1.13;
   margin: 0px; }
@@ -1375,7 +1375,7 @@ li:hover .elixir_arrow_closed {
   li {
     font-size: 16px; }
   blockquote {
-    font-family: "NantesTrial", serif;
+    font-family: "Nantes", serif;
     font-size: 3.625em;
     line-height: 1.13;
     margin: 0px; }
@@ -1456,7 +1456,7 @@ li:hover .elixir_arrow_closed {
     position: absolute; }
   .heading-mobile {
     text-align: center;
-    padding: 250px 0px 200px 0px;
+    padding: 100px 0px 100px 0px;
     background-color: #FFFFFF; }
   aside {
     display: none; }
