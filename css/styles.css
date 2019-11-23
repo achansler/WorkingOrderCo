@@ -107,6 +107,10 @@ h1 {
   opacity: 1;
   transition-duration: 1s; }
 
+.italic {
+  font-style: italic;
+}
+
 h2 {
   font-size: 2.375em;
   font-weight: normal;
@@ -127,6 +131,12 @@ p {
 
 p.small, a {
   font-size: 16px; }
+
+.quote_citation {
+  font-size: 16px;
+  color: $primaryWhite;
+  font-style: italic;
+}
 
 a {
   text-decoration: none;

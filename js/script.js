@@ -54,7 +54,7 @@ if (mq.matches) {
     setTimeout(function() { $( ".elixir_start" ).addClass( "none"); }, 1000);
     $( ".hide_title" ).delay(1000).addClass( "title");
     setTimeout(function() { $( ".title" ).removeClass( "hide_title"); }, 1100);
-  }, 3000);
+  }, 5000);
 
 
   $("ul").click(function() {
@@ -226,65 +226,71 @@ if (mq.matches) {
   }, 1000);
 }
 
+if (window.innerWidth > 769) {
+  var expandDiv = document.getElementById("quote");
 
-var expandDiv = document.getElementById("quote");
+  function expanding() {
+    var scrolltop = window.pageYOffset / 10; // get number of pixels document has scrolled vertically
 
-function expanding() {
-  var scrolltop = window.pageYOffset / 10; // get number of pixels document has scrolled vertically
+    //Or using width
+    $('.everything').css('padding-right', Math.floor(100 - scrolltop) + 'px');
+    $('.everything').css('padding-top', Math.floor(250 - scrolltop) + 'px');
+    $('.in').css('padding-top', Math.floor(0 - scrolltop) + 'px');
+    $('.nature').css('padding-left', Math.floor(150 - scrolltop) + 'px');
+    $('.nature').css('padding-top', Math.floor(300 - scrolltop) + 'px');
+    $('.invites').css('padding-left', Math.floor (150 - scrolltop) + 'px');
+    $('.invites').css('padding-top', Math.floor(25 - scrolltop) + 'px');
+    $('.us').css('padding-top', Math.floor(200 - scrolltop) + 'px');
+    $('.constantly').css('padding-top', Math.floor(380 - scrolltop) + 'px');
+    $('.constantly').css('padding-right', Math.floor(50 - scrolltop) + 'px');
+    $('.are').css('padding-top', Math.floor(400 - scrolltop) + 'px');
+    $('.we').css('padding-left', Math.floor(100 - scrolltop) + 'px');
+    $('.we').css('padding-top', Math.floor(230 - scrolltop) + 'px');
+    $('.what').css('padding-top', Math.floor(405 - scrolltop) + 'px');
+    $('.what').css('padding-left', Math.floor(150 - scrolltop) + 'px');
+    $('.be').css('padding-top', Math.floor(250 - scrolltop) + 'px');
+    $('.be').css('padding-left', Math.floor(150 - scrolltop) + 'px');
+    $('.to').css('padding-top', Math.floor(400 - scrolltop) + 'px');
+  }
 
-  //Or using width
-  $('.everything').css('padding-right', Math.floor(100 - scrolltop) + 'px');
-  $('.everything').css('padding-top', Math.floor(250 - scrolltop) + 'px');
-  $('.in').css('padding-top', Math.floor(0 - scrolltop) + 'px');
-  $('.nature').css('padding-left', Math.floor(150 - scrolltop) + 'px');
-  $('.nature').css('padding-top', Math.floor(300 - scrolltop) + 'px');
-  $('.invites').css('padding-left', Math.floor (150 - scrolltop) + 'px');
-  $('.invites').css('padding-top', Math.floor(25 - scrolltop) + 'px');
-  $('.us').css('padding-top', Math.floor(200 - scrolltop) + 'px');
-  $('.constantly').css('padding-top', Math.floor(380 - scrolltop) + 'px');
-  $('.constantly').css('padding-right', Math.floor(50 - scrolltop) + 'px');
-  $('.are').css('padding-top', Math.floor(400 - scrolltop) + 'px');
-  $('.we').css('padding-left', Math.floor(100 - scrolltop) + 'px');
-  $('.we').css('padding-top', Math.floor(230 - scrolltop) + 'px');
-  $('.what').css('padding-top', Math.floor(405 - scrolltop) + 'px');
-  $('.what').css('padding-left', Math.floor(150 - scrolltop) + 'px');
-  $('.be').css('padding-top', Math.floor(250 - scrolltop) + 'px');
-  $('.be').css('padding-left', Math.floor(150 - scrolltop) + 'px');
-  $('.to').css('padding-top', Math.floor(400 - scrolltop) + 'px');
+  function expanding_logo(){
+    var scrolltop = window.pageYOffset/ 80;
+    $('.selected').css('height', 64 - scrolltop + 'vh');
+  }
+
+  window.addEventListener('scroll', function() {
+    requestAnimationFrame(expanding);
+  }, false);
+  window.addEventListener('scroll', function() {
+    requestAnimationFrame(expanding_logo);
+  }, false);
+
+
+  $(document).ready(function() {
+  	$(window).scroll(function() {
+  		var windowpos = $(window).scrollTop();
+  		if ( windowpos >= 4000) {
+        $('.everything, .constantly').css('padding-right',0 + 'px');
+        $('.everything, .in, .nature, .us, .constantly, .are, .we, .be, .to, .what').css('padding-top',0 + 'px');
+        $('.nature, .invites, .we, .what, .be').css('padding-left',0 + 'px');
+  		}
+  	});
+  });
+
+  $(document).ready(function() {
+  	$(window).scroll(function() {
+  		var windowpos = $(window).scrollTop();
+  		if ( windowpos >= 4500) {
+        $('.citation').addClass('citation_opacity');
+  		}
+  	});
+  });
+
+
+
+
 }
 
-function expanding_logo(){
-  var scrolltop = window.pageYOffset/ 80;
-  $('.selected').css('height', 64 - scrolltop + 'vh');
-}
-
-window.addEventListener('scroll', function() {
-  requestAnimationFrame(expanding);
-}, false);
-window.addEventListener('scroll', function() {
-  requestAnimationFrame(expanding_logo);
-}, false);
-
-
-$(document).ready(function() {
-	$(window).scroll(function() {
-		var windowpos = $(window).scrollTop();
-		if ( windowpos >= 4000) {
-      $('.everything, .constantly').css('padding-right',0 + 'px');
-      $('.everything, .in, .nature, .us, .constantly, .are, .we, .be, .to, .what').css('padding-top',0 + 'px');
-      $('.nature, .invites, .we, .what, .be').css('padding-left',0 + 'px');
-		}
-	});
-});
-
-$(document).ready(function() {
-	$(window).scroll(function() {
-		var windowpos = $(window).scrollTop();
-		if ( windowpos >= 4500) {
-      $('.citation').addClass('citation_opacity');
-		}
-	});
-});
 
 //Mailchimp form
 
