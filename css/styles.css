@@ -214,13 +214,14 @@ img {
   top: 89%; }
 
 .philosophy_background {
-  background-image: url("../images/philosohpy_flower.png");
-  background-size: 50%;
-  background-repeat: no-repeat; }
+  background-image: url("../images/philosophy_home.gif");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 25%;}
 
 .elixir_background {
-  background-image: url("../images/elixirs_flower.png");
-  background-size: 50%;
+  background-image: url("../images/elixir_home.gif");
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: right; }
 
@@ -237,11 +238,11 @@ img {
   position: relative; }
 
 .header_flower {
-  grid-column: 2/ span 5;
-  grid-row: 1/ span 7; }
+    grid-column: 4/ span 5;
+    grid-row: 1/ span 7;}
 
 .header_flower_contact {
-  grid-column: 5/ span 5;
+  grid-column: 7/ span 3;
   grid-row: 1/ span 7; }
 
 li {
@@ -934,7 +935,7 @@ input:focus:-ms-input-placeholder {
   grid-row: 7/ span 3; }
 
 .newsletter_image {
-  grid-column: 6/ span 6;
+  grid-column: 7/ span 5;
   grid-row: 1/ span 6; }
 
 .back_top_arrow {
