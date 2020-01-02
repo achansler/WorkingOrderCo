@@ -226,9 +226,10 @@ img {
   background-position: right; }
 
 .visit_background {
-  background-image: url("../images/visit_flower.png");
-  background-size: 50%;
-  background-repeat: no-repeat; }
+  background-image: url("../images/visit_flower.gif");
+  background-size: 38%;
+  background-repeat: no-repeat;
+  background-position: 25%; }
 
 .secret_message_home {
   background-image: url("../images/home_secret.png");
